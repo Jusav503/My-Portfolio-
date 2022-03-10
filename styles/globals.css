@@ -11,6 +11,15 @@ a {
   text-decoration: none;
 }
 
+h1  {
+  font-family: 'Trebuchet MS';
+}
+
+article {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
 * {
   box-sizing: border-box;
 }
