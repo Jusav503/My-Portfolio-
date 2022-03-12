@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import FooterComponent from "../components/FooterComponent";
+import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <NavBar/>
         <article className={styles.contentMain}>
           <h1 className={styles.Maintitle}>Justice Velasco</h1>
           <p className={styles.mainParagraph}>
