@@ -13,11 +13,11 @@ function NavBar() {
     setAnchorEl(null);
   };
   return (
-    <div className={styles.navBar}>
+    <nav className={styles.navBar}>
       <div className={styles.hola}>
         <ul className={styles.navBarDesktop}>
           <li>
-            <a href=""> Acerca de mi</a>
+            <a href="#about-me"> Acerca de mi</a>
           </li>
           <li>
             <a href="">Proyectos</a>
@@ -41,11 +41,17 @@ function NavBar() {
         onClose={handleClose}
         className={styles.navBarMenu}
       >
-        <MenuItem onClick={handleClose}>Acerca de mí</MenuItem>
-        <MenuItem onClick={handleClose}>Proyectos</MenuItem>
-        <MenuItem onClick={handleClose}>Hablemos</MenuItem>
+        <MenuItem onClick={handleClose}>
+          <a href="#about-me">Acerca de mí</a>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <a href="">Proyectos</a>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <a href="">Hablemos</a>
+        </MenuItem>
       </Menu>
-    </div>
+    </nav>
   );
 }
 

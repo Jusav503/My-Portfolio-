@@ -3,6 +3,7 @@ import Head from "next/head";
 import FooterComponent from "../components/FooterComponent";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
+import AboutMe from "./AboutMe";
 
 const Home: NextPage = () => {
   return (
@@ -19,15 +20,14 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <NavBar/>
         <article className={styles.contentMain}>
-          <h1 className={styles.Maintitle}>Justice Velasco</h1>
-          <p className={styles.mainParagraph}>
-            The little front end web/mobile developer.
-          </p>
+          <div>
+            <h1 className={styles.Maintitle}>Justice Velasco</h1>
+            <p className={styles.mainParagraph}>
+              The little front end web/mobile developer.
+            </p>
+          </div>
         </article>
-
-        <article className={styles.aboutMe} id="about-me">
-          <h1>Acerca de mi</h1>
-        </article>
+        <AboutMe/>
       </main>
 
       <FooterComponent />
