@@ -14,7 +14,7 @@ function NavBar() {
   };
   return (
     <nav className={styles.navBar}>
-      <div className={styles.hola}>
+      <div className={styles.menuDesktop}>
         <ul className={styles.navBarDesktop}>
           <li>
             <a href="#about-me"> Acerca de mi</a>
@@ -28,7 +28,7 @@ function NavBar() {
         </ul>
       </div>
       <IconButton
-        className={styles.adios}
+        className={styles.menuMobile}
         id="basic-button"
         onClick={handleClick}
       >
