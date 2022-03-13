@@ -1,5 +1,4 @@
 .container {background-color: #E4E4E4;}
-
 .main { padding: 2rem 0; min-height: 100vh;}
 
 .navBar { 
@@ -14,9 +13,7 @@
   justify-content: space-around;
   padding-right:3rem;
 }
-.navBarMenu {
-  background-color: rgba(128, 128, 128, 0.411);
-}
+.navBarMenu { background-color: rgba(128, 128, 128, 0.411);}
 
 .contentMain { 
   width: 100%; 
@@ -47,6 +44,10 @@
   height:80vh;
   align-items: center;
   grid-template-columns: 2fr 1fr;
+}
+
+.projectsContainer {
+  background-color:burlywood;
 }
 
 .card {

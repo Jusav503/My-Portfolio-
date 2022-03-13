@@ -20,7 +20,7 @@ function NavBar() {
             <a href="#about-me"> Acerca de mi</a>
           </li>
           <li>
-            <a href="">Proyectos</a>
+            <a href="#projects">Proyectos</a>
           </li>
           <li>
             <a href="">Hablemos</a>
@@ -45,7 +45,7 @@ function NavBar() {
           <a href="#about-me">Acerca de mí</a>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <a href="">Proyectos</a>
+          <a href="#projects">Proyectos</a>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <a href="">Hablemos</a>

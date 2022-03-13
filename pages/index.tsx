@@ -4,6 +4,7 @@ import FooterComponent from "../components/FooterComponent";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
 import AboutMe from "./AboutMe";
+import Projects from "./Projects";
 
 const Home: NextPage = () => {
   return (
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
           </div>
         </article>
         <AboutMe/>
+        <Projects/>
       </main>
 
       <FooterComponent />
