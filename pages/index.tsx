@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import styles from "../styles/Home.module.css";
 import FooterComponent from "../components/FooterComponent";
 import NavBar from "../components/NavBar";
-import styles from "../styles/Home.module.css";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 
