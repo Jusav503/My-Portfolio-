@@ -71,6 +71,22 @@
   border-radius: 10px;
 }
 
+.logoContainer {
+  
+  padding: 4rem;
+}
+.logoContent {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+.logo {
+  width: 230px;
+  height:auto;
+  object-fit: contain;
+  padding:2rem;
+}
+
 .footer {
   display: flex;
   flex: 1;
