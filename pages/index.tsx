@@ -5,6 +5,7 @@ import FooterComponent from "../components/FooterComponent";
 import NavBar from "../components/NavBar";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
+import ContactForm from "../components/ContactForm";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <NavBar/>
+
         <article className={styles.contentMain}>
           <div>
             <h1 className={styles.Maintitle}>Justice Velasco</h1>
@@ -28,8 +30,10 @@ const Home: NextPage = () => {
             </p>
           </div>
         </article>
+
         <AboutMe/>
         <Projects/>
+
         <div className={styles.logoContainer}>
           <h3 style={{textAlign:"center", color:"#2c2c2c"}}>Web creada con:</h3>
           <div className={styles.logoContent}>
@@ -37,6 +41,8 @@ const Home: NextPage = () => {
             <img src="https://miro.medium.com/max/1400/1*Smbj_VLH7JRp9GhLaKyiUQ.png" alt="logo react" className={styles.logo} />
           </div>
         </div>
+
+        <ContactForm/>
       </main>
 
       <FooterComponent />
