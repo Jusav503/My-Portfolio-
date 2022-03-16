@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <article className={styles.articleContainer}>
           <div className={styles.contentMain}>
             <div>
-              <h1 className={styles.Maintitle}>Justice Velasco</h1>
+              <h1 className={styles.mainTitle}>Justice Velasco</h1>
               <p className={styles.mainParagraph}>
                 The little front end web/mobile developer.
               </p>
