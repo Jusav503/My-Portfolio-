@@ -16,15 +16,22 @@
 }
 .navBarMenu { background-color: rgba(128, 128, 128, 0.411);}
 
-.contentMain { 
-  width: 100%; 
+.mainContainer {
+  width:100%;
+  display:flex;
+  justify-content: center;
   align-items: center;
-  display: flex;
 }
-.Maintitle { font-size:3.6rem; margin-bottom: 0%;}
+.contentMain { 
+  width: 130vh; 
+  display:grid;
+  grid-template-columns:1.2fr 0.4fr;
+  align-items: center;
+}
+.Maintitle { font-size:4.6rem; margin-bottom: 0%;}
 .mainParagraph {
   color: rgb(109, 109, 109);
-  font-size: 2rem;
+  font-size: 3rem;
   padding-left: 2rem;
   margin-top:0%
 }

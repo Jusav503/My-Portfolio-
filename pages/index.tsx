@@ -22,12 +22,15 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <NavBar/>
 
-        <article className={styles.contentMain}>
-          <div>
-            <h1 className={styles.Maintitle}>Justice Velasco</h1>
-            <p className={styles.mainParagraph}>
-              The little front end web/mobile developer.
-            </p>
+        <article className={styles.mainContainer}>
+          <div className={styles.contentMain}>
+            <div>
+              <h1 className={styles.Maintitle}>Justice Velasco</h1>
+              <p className={styles.mainParagraph}>
+                The little front end web/mobile developer.
+              </p>
+            </div>
+            <img src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png" alt="pixel Justice" className={styles.image} />
           </div>
         </article>
 
