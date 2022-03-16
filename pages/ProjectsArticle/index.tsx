@@ -1,8 +1,8 @@
 import React from "react";
-import CardComponent from "../components/CardComponent";
-import styles from "../styles/Home.module.css";
+import CardComponent from "../../components/CardComponent";
+import styles from "./styles.module.css";
 
-function Projects() {
+function ProjectsArticle() {
   return (
     <article id="projects" className={styles.projectsContainer}>
       <h1>Mis projectos</h1>
@@ -41,4 +41,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsArticle;
