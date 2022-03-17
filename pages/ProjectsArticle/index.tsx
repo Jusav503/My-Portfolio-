@@ -13,7 +13,6 @@ function ProjectsArticle() {
             image="https://jusapp.s3.eu-central-1.amazonaws.com/netflix.jpg"
             alt="netflix clone"
           />
-        
           <CardComponent
             image="https://jusapp.s3.eu-central-1.amazonaws.com/jusavcoin2.jpg"
             alt="coin market"

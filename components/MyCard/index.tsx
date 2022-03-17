@@ -8,7 +8,7 @@ interface cardProps {
   alt: string;
 }
 
-function CardComponent(props:cardProps) {
+function index(props:cardProps) {
   const domTarget = useRef(null);
   const [{ zoom, scale }, api] = useSpring(() => ({
     scale: 1,
@@ -41,4 +41,4 @@ function CardComponent(props:cardProps) {
   );
 }
 
-export default CardComponent;
+export default index;

@@ -59,7 +59,6 @@ const Home: NextPage = () => {
             />
           </div>
         </div>
-
         <ContactForm />
       </main>
 
