@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-
+import styles from "./styles.module.css"
 import React, { useRef } from "react";
 
 function ContactForm() {
@@ -27,15 +27,17 @@ function ContactForm() {
     };
 
     return (
-      <form onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="name" />
-        <label>Email</label>
-        <input type="email" name="email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
+      <div className={styles.container}>
+        <form onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="name" />
+          <label>Email</label>
+          <input type="email" name="email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
     );
   }
 }

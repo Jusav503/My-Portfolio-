@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <NavBar />
+        {/* <NavBar /> */}
 
         <article className={styles.articleContainer}>
           <div className={styles.contentMain}>
@@ -43,9 +43,6 @@ const Home: NextPage = () => {
         <ProjectsArticle />
 
         <div className={styles.logoContainer}>
-          <h3 style={{ textAlign: "center", color: "#2c2c2c" }}>
-            Web creada con:
-          </h3>
           <div className={styles.logoContent}>
             <img
               src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"

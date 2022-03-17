@@ -6,13 +6,13 @@ import styles from "./styles.module.css";
 function AboutMe() {
   return (
     <article className={styles.aboutMe} id="about-me">
-      <h1>Acerca de mi</h1>
+      <h1 className={styles.mainTitle}>Acerca de mi</h1>
 
       <section className={styles.sectionMain}>
         <div className={styles.gridContainer}>
           <div>
             <AnimationOnScroll animateIn="animate__backInLeft">
-              <p>
+              <p className={styles.paragraph}>
                 ¡Hey! Soy Justice Velasco, programador junior web/mobile
                 front-end con React. El amor por los ordenadores y la tecnología
                 comenzó a los 6 años de edad, ya que, a esa edad mi padre era
@@ -20,9 +20,9 @@ function AboutMe() {
                 ordenador descubriendo el mundo del internet.
               </p>
             </AnimationOnScroll>
-            
+
             <AnimationOnScroll animateIn="animate__backInRight">
-              <p>
+              <p className={styles.paragraph}>
                 A los 17 años hice una formación de programación y desarrollo de
                 aplicaciones web, aprendí muchas de las tecnologías que se usan
                 en el día a día de los programadores, también aprendí a como

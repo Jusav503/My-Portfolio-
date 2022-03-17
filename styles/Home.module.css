@@ -1,16 +1,21 @@
 .container {
-  background-color: #e4e4e4;
+  background: #a8c0ff;
+  background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+  background: linear-gradient(to right, #3f2b96, #a8c0ff);
 }
 .main {
-  padding: 2rem 0;
+  padding: 0 2rem;
   min-height: 100vh;
 }
 
 .articleContainer {
   width: 100%;
+  background-color: #e4e4e4;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 .contentMain {
   max-width: 200vh;
@@ -33,6 +38,7 @@
 }
 
 .logoContainer {
+  background-color: white;
   padding: 4rem;
 }
 .logoContent {

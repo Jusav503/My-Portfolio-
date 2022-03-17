@@ -1,5 +1,14 @@
 .projectsContainer {
-  background-color: rgb(119, 138, 85);
+  background-color: rgb(255, 255, 255); 
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.topContent {margin-top:-200px;}
+.mainTitle {
+  color:white;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: xx-large;
 }
 .projectsMain {
   display: flex;
