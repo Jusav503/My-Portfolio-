@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             <div>
               <h1 className={styles.mainTitle}>Justice Velasco</h1>
               <p className={styles.mainParagraph}>
-                The little front end web/mobile developer.
+                "The little front end web/mobile developer."
               </p>
             </div>
             <img
