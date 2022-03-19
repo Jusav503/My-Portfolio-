@@ -25,9 +25,20 @@ function AboutMe() {
               <p className={styles.paragraph}>
                 A los 17 años hice una formación de programación y desarrollo de
                 aplicaciones web, aprendí muchas de las tecnologías que se usan
-                en el día a día de los programadores, también aprendí a como
-                planificar, organizarme, desarrollar y monitorear los proyectos
-                realizados.
+                en el día a día de los programadores: HTML, CSS, JavaScript,
+                también aprendí a como planificar, organizarme y desarrollar
+                proyectos.
+              </p>
+            </AnimationOnScroll>
+
+            <AnimationOnScroll animateIn="animate__backInLeft">
+              <p className={styles.paragraph}>
+                Por cuenta propia aprendí durante 3 meses Laravel 8, desarrollé
+                una pequeña web autoadministrable. Además, por mi alta
+                curiosidad decidí pasarme a desarrollo mobile, desarrollando
+                pequeñas interfaces, consumiendo datos de una API pública,
+                clonando algunas de las interfaces como Netflix, Spotify, Amazon
+                para poder potenciar mis habilidades como desarrollador.
               </p>
             </AnimationOnScroll>
           </div>

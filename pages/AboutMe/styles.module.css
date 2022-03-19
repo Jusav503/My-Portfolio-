@@ -1,5 +1,4 @@
 .aboutMe {
-  height:100vh;
 }
 .mainTitle {
   color: white;
@@ -7,7 +6,7 @@
   margin:0;
 }
 .sectionMain {
-  max-width:140vh;
+  max-width:70rem;
   margin:auto;
 }
 .paragraph {

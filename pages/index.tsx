@@ -21,11 +21,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {/* <NavBar /> */}
-
         <article className={styles.articleContainer}>
-          <div className={styles.contentMain}>
-            <div>
+          <div className={styles.articleContent}>
+            <div className={styles.articleText}>
               <h1 className={styles.mainTitle}>Justice Velasco</h1>
               <p className={styles.mainParagraph}>
                 "The little front end web/mobile developer."
@@ -34,7 +32,7 @@ const Home: NextPage = () => {
             <img
               src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
               alt="pixel Justice"
-              className={styles.image}
+              className={styles.mainImage}
             />
           </div>
         </article>
@@ -50,13 +48,23 @@ const Home: NextPage = () => {
               className={styles.logo}
             />
             <img
-              src="https://miro.medium.com/max/1400/1*Smbj_VLH7JRp9GhLaKyiUQ.png"
-              alt="logo react"
+              src="https://seeklogo.com/images/R/react-spring-logo-757E1EF5B5-seeklogo.com.png"
+              alt="react spring logo"
+              style={{width: 80}}
+            />
+            <img
+              src="https://miro.medium.com/max/1400/1*28sUAZod6N5ptJndb5CAng.png"
+              alt="mantine logo"
               className={styles.logo}
+            />
+            <img
+              src="https://v4.mui.com/static/logo.png"
+              alt="material ui logo"
+              style={{width: 110}}
             />
           </div>
         </div>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </main>
 
       <FooterComponent />
