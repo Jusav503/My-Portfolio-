@@ -11,7 +11,7 @@ import { Image } from "@mantine/core";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{scrollBehavior:'smooth'}}>
       <Head>
         <title>Justice Velasco</title>
         <meta
