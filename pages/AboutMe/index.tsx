@@ -12,7 +12,7 @@ function AboutMe() {
       <section className={styles.sectionMain}>
         <div className={styles.gridContainer}>
           <div>
-            <AnimationOnScroll animateIn="animate__backInLeft">
+            <AnimationOnScroll animateIn="animate__bounceIn">
               <p className={styles.paragraph}>
                 ¡Hey! Soy Justice Velasco, programador junior web/mobile
                 front-end con React. El amor por los ordenadores y la tecnología
@@ -22,7 +22,7 @@ function AboutMe() {
               </p>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__backInRight">
+            <AnimationOnScroll animateIn="animate__bounceIn">
               <p className={styles.paragraph}>
                 A los 17 años hice una formación de programación y desarrollo de
                 aplicaciones web, aprendí muchas de las tecnologías que se usan
@@ -32,7 +32,7 @@ function AboutMe() {
               </p>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__backInLeft">
+            <AnimationOnScroll animateIn="animate__bounceIn">
               <p className={styles.paragraph}>
                 Por cuenta propia aprendí durante 3 meses Laravel 8, desarrollé
                 una pequeña web autoadministrable. Además, por mi alta
