@@ -2,6 +2,7 @@ import React from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import styles from "./styles.module.css";
+import Image from "next/image";
 
 function AboutMe() {
   return (
@@ -42,7 +43,7 @@ function AboutMe() {
               </p>
             </AnimationOnScroll>
           </div>
-          <img
+          <Image
             src="https://jusapp.s3.eu-central-1.amazonaws.com/aboutme.jpg"
             alt="justice velasco"
             className={styles.image}

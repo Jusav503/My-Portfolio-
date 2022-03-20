@@ -7,6 +7,7 @@ import NavBar from "../components/NavBar";
 import ProjectsArticle from "./ProjectsArticle";
 import AboutMe from "./AboutMe";
 import ContactForm from "../components/ContactForm";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
                 "The little front end web/mobile developer."
               </p>
             </div>
-            <img
+            <Image
               src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
               alt="pixel Justice"
               className={styles.mainImage}
@@ -42,26 +43,34 @@ const Home: NextPage = () => {
 
         <div className={styles.logoContainer}>
           <div className={styles.logoContent}>
-            <img
-              src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"
-              alt="logo react"
-              className={styles.logo}
-            />
-            <img
-              src="https://seeklogo.com/images/R/react-spring-logo-757E1EF5B5-seeklogo.com.png"
-              alt="react spring logo"
-              style={{width: 80}}
-            />
-            <img
-              src="https://miro.medium.com/max/1400/1*28sUAZod6N5ptJndb5CAng.png"
-              alt="mantine logo"
-              className={styles.logo}
-            />
-            <img
-              src="https://v4.mui.com/static/logo.png"
-              alt="material ui logo"
-              style={{width: 110}}
-            />
+            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+              <Image
+                src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"
+                alt="logo react"
+                className={styles.logo}
+              />
+            </a>
+            <a href="https://react-spring.io/" target="_blank" rel="noreferrer">
+              <Image
+                src="https://seeklogo.com/images/R/react-spring-logo-757E1EF5B5-seeklogo.com.png"
+                alt="react spring logo"
+                width={80}
+              />
+            </a>
+            <a href="https://mantine.dev/" target="_blank" rel="noreferrer">
+              <Image
+                src="https://miro.medium.com/max/1400/1*28sUAZod6N5ptJndb5CAng.png"
+                alt="mantine logo"
+                className={styles.logo}
+              />
+            </a>
+            <a href="https://mui.com/" target="_blank" rel="noreferrer">
+              <Image
+                src="https://v4.mui.com/static/logo.png"
+                alt="material ui logo"
+                width={110}
+              />
+            </a>
           </div>
         </div>
         {/* <ContactForm /> */}
