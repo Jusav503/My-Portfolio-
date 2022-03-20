@@ -6,7 +6,7 @@ import { Image } from "@mantine/core";
 
 function AboutMe() {
   return (
-    <article className={styles.aboutMe} id="about-me">
+    <div className={styles.aboutMe}>
       <h1 className={styles.mainTitle}>Acerca de mi</h1>
 
       <section className={styles.sectionMain}>
@@ -16,8 +16,8 @@ function AboutMe() {
               <p className={styles.paragraph}>
                 ¡Hey! Soy Justice Velasco, programador junior web/mobile
                 front-end con React. El amor por los ordenadores y la tecnología
-                comenzó a los 6 años de edad, ya que, a esa edad mi padre era
-                dueño de un ciber, ciber donde yo pasaba horas frente al
+                comenzó a los 6 años de edad, a esa edad mi padre era
+                dueño de un ciber, donde yo pasaba horas frente al
                 ordenador descubriendo el mundo del internet.
               </p>
             </AnimationOnScroll>
@@ -26,8 +26,8 @@ function AboutMe() {
               <p className={styles.paragraph}>
                 A los 17 años hice una formación de programación y desarrollo de
                 aplicaciones web, aprendí muchas de las tecnologías que se usan
-                en el día a día de los programadores: HTML, CSS, JavaScript,
-                también aprendí a como planificar, organizarme y desarrollar
+                en el día a día de los programadores como HTML, CSS, JavaScript.
+                También aprendí a como planificar, organizarme y desarrollar los
                 proyectos.
               </p>
             </AnimationOnScroll>
@@ -51,7 +51,7 @@ function AboutMe() {
           />
         </div>
       </section>
-    </article>
+    </div>
   );
 }
 

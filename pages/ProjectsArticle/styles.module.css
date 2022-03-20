@@ -2,12 +2,12 @@
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  margin-top: 120px;
+  margin-top: 180px;
   display: flex;
   justify-content:center;
 }
 .topContent {
-  margin-top: -200px;
+  margin-top: -170px;
 }
 .mainTitle {
   color: white;

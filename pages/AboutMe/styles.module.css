@@ -1,7 +1,7 @@
 .mainTitle {
   color: white;
   font-size: 7vw;
-  margin:0;
+  margin-bottom: 0%;
 }
 .sectionMain {
   max-width:70rem;
@@ -30,6 +30,7 @@
   }
 }
 @media (min-width: 600px) {
+  .mainTitle{ text-align: center;}
   .sectionMain {
     margin-top:3rem;
   }

@@ -1,7 +1,8 @@
 .container {
-  background: #a8c0ff;
-  background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
-  background: linear-gradient(to right, #3f2b96, #a8c0ff);
+  background: #0F2027;
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
 }
 .main {
   padding: 0 0.5rem;
