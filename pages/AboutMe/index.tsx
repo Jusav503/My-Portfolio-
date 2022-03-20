@@ -2,7 +2,7 @@ import React from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import styles from "./styles.module.css";
-import Image from "next/image";
+import { Image } from "@mantine/core";
 
 function AboutMe() {
   return (
@@ -46,6 +46,7 @@ function AboutMe() {
           <Image
             src="https://jusapp.s3.eu-central-1.amazonaws.com/aboutme.jpg"
             alt="justice velasco"
+            radius="md"
             className={styles.image}
           />
         </div>

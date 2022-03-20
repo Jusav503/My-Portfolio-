@@ -7,7 +7,7 @@ import NavBar from "../components/NavBar";
 import ProjectsArticle from "./ProjectsArticle";
 import AboutMe from "./AboutMe";
 import ContactForm from "../components/ContactForm";
-import Image from "next/image";
+import { Image } from "@mantine/core";
 
 const Home: NextPage = () => {
   return (
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
               <Image
                 src="https://seeklogo.com/images/R/react-spring-logo-757E1EF5B5-seeklogo.com.png"
                 alt="react spring logo"
-                width={80}
+                style={{ width: 80 }}
               />
             </a>
             <a href="https://mantine.dev/" target="_blank" rel="noreferrer">
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
               <Image
                 src="https://v4.mui.com/static/logo.png"
                 alt="material ui logo"
-                width={110}
+                style={{ width: 110 }}
               />
             </a>
           </div>
