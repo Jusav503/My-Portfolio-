@@ -1,20 +1,22 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useSpring, animated, to } from "@react-spring/web";
 import { useGesture } from "react-use-gesture";
 import styles from "./styles.module.css";
+import { Drawer } from "@mantine/core";
 
 interface cardProps {
   image: string;
-  alt: string;
+  altImage: string;
+  name: string;
+  description: string;
 }
-
-function CardComponent(props:cardProps) {
+function CardComponent(props: cardProps) {
+  const [opened, setOpened] = useState(false);
   const domTarget = useRef(null);
   const [{ zoom, scale }, api] = useSpring(() => ({
     scale: 1,
     zoom: 0,
   }));
-
   useGesture(
     {
       onMove: ({ dragging }) =>
@@ -26,6 +28,7 @@ function CardComponent(props:cardProps) {
     },
     { domTarget, eventOptions: { passive: false } }
   );
+
   return (
     <div className={styles.container}>
       <animated.img
@@ -34,9 +37,19 @@ function CardComponent(props:cardProps) {
         style={{
           scale: to([scale, zoom], (s, z) => s + z),
         }}
-        src={props.image} alt={props.alt}
+        src={props.image}
+        alt={props.altImage}
+        onClick={() => setOpened(true)}
+      />
+      <Drawer
+        opened={opened}
+        onClose={() => setOpened(false)}
+        title={props.name}
+        padding="xl"
+        size="xl"
       >
-      </animated.img>
+        {props.description}
+      </Drawer>
     </div>
   );
 }
