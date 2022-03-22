@@ -2,7 +2,6 @@
   "extends": "next",
   "rules": {
     "react/no-unescaped-entities":"off",
-    "react-hooks/rules-of-hooks": "off",
-    "react/no-unknown-property": "off"
+    "react-hooks/rules-of-hooks": "off"
   }
 }
