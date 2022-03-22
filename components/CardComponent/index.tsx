@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useSpring, animated, to } from "@react-spring/web";
-import { useGesture } from "react-use-gesture";
+import { useGesture } from "@use-gesture/react";
 import styles from "./styles.module.css";
 import { Button, Drawer } from "@mantine/core";
 import { BsGithub } from "react-icons/bs";
@@ -67,13 +67,11 @@ function CardComponent(props: cardProps) {
             <Button
               title="Jusav503"
               className={styles.button}
-              component="a" 
+              component="a"
               target="_blank"
               rel="noopener noreferrer"
               href={props.projectUrl}
-              leftIcon={
-                <BsGithub style={{fontSize:26}} />
-              }
+              leftIcon={<BsGithub style={{ fontSize: 26 }} />}
             >
               Ver proyecto
             </Button>
