@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { useSpring, animated, to } from "@react-spring/web";
+import { useSpring, animated, to } from "react-spring";
 import { useGesture } from "@use-gesture/react";
 import styles from "./styles.module.css";
 import { Button, Drawer } from "@mantine/core";
