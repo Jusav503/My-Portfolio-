@@ -1,7 +1,7 @@
 import React from "react";
 import CardComponent from "../../components/CardComponent";
 import styles from "./styles.module.css";
-import projects from "./data/projects";
+import projects from "../../data/projects";
 
 function ProjectsArticle() {
   return (
