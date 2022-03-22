@@ -4,7 +4,6 @@ import styles from "./styles.module.css";
 import projects from "./data/projects";
 
 function ProjectsArticle() {
-  console.log(projects)
   return (
     <article id="projects" className={styles.projectsContainer}>
       <div className={styles.topContent}>

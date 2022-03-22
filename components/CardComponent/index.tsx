@@ -14,7 +14,7 @@ interface cardProps {
 }
 function CardComponent(props: cardProps) {
   const [opened, setOpened] = useState(false);
-  const domTarget = useRef(null);
+  const target = useRef(null);
   const [{ zoom, scale }, api] = useSpring(() => ({
     scale: 1,
     zoom: 0,
@@ -28,13 +28,13 @@ function CardComponent(props: cardProps) {
         }),
       onHover: ({ hovering }) => !hovering && api({ scale: 1 }),
     },
-    { domTarget, eventOptions: { passive: false } }
+    { target, eventOptions: { passive: false } }
   );
 
   return (
     <div className={styles.container}>
       <animated.img
-        ref={domTarget}
+        ref={target}
         src={props.image}
         alt={props.altImage}
         onClick={() => setOpened(true)}
