@@ -3,7 +3,6 @@
   "rules": {
     "react/no-unescaped-entities":"off",
     "react-hooks/rules-of-hooks": "off",
-    "react/no-unknown-property": "off",
-    "import/no-anonymous-default-export": "off"
+    "react/no-unknown-property": "off"
   }
 }
