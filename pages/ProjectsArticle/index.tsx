@@ -19,6 +19,7 @@ function ProjectsArticle() {
                     altImage={project.altImage}
                     name={project.name}
                     description={project.description}
+                    projectUrl={project.projectUrl}
                   />
                 </div>
               );
