@@ -3,7 +3,6 @@ import Head from "next/head";
 
 import styles from "../styles/Home.module.css";
 import FooterComponent from "../components/FooterComponent";
-import NavBar from "../components/NavBar";
 import ProjectsArticle from "./ProjectsArticle";
 import AboutMe from "./AboutMe";
 import ContactForm from "../components/ContactForm";
