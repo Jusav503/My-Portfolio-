@@ -49,18 +49,18 @@ const Home: NextPage = () => {
                 className={styles.logo}
               />
             </a>
-            <a href="https://react-spring.io/" target="_blank" rel="noreferrer">
-              <Image
-                src="https://seeklogo.com/images/R/react-spring-logo-757E1EF5B5-seeklogo.com.png"
-                alt="react spring logo"
-                style={{ width: 80 }}
-              />
-            </a>
             <a href="https://mantine.dev/" target="_blank" rel="noreferrer">
               <Image
                 src="https://miro.medium.com/max/1400/1*28sUAZod6N5ptJndb5CAng.png"
                 alt="mantine logo"
                 className={styles.logo}
+              />
+            </a>
+            <a href="https://react-spring.io/" target="_blank" rel="noreferrer">
+              <Image
+                src="https://seeklogo.com/images/R/react-spring-logo-757E1EF5B5-seeklogo.com.png"
+                alt="react spring logo"
+                style={{ width: 55, margin: 15, }}
               />
             </a>
           </div>
