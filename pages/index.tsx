@@ -63,13 +63,6 @@ const Home: NextPage = () => {
                 className={styles.logo}
               />
             </a>
-            <a href="https://mui.com/" target="_blank" rel="noreferrer">
-              <Image
-                src="https://v4.mui.com/static/logo.png"
-                alt="material ui logo"
-                style={{ width: 110 }}
-              />
-            </a>
           </div>
         </div>
         {/* <ContactForm /> */}

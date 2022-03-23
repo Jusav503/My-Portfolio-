@@ -14,11 +14,10 @@ function AboutMe() {
           <div>
             <AnimationOnScroll animateIn="animate__bounceIn">
               <p className={styles.paragraph}>
-                ¡Hey! Soy Justice Velasco, programador junior web/mobile
-                front-end con React. El amor por los ordenadores y la tecnología
-                comenzó a los 6 años de edad, a esa edad mi padre era
-                dueño de un ciber, donde yo pasaba horas frente al
-                ordenador descubriendo el mundo del internet.
+                ¡Hey! Soy Justice Velasco, programador junior web/mobile con
+                ReactJS. El amor por los ordenadores y la tecnología comenzó a
+                los 6 años de edad, con un ordenador sobre mesa que tenía en
+                casa donde yo pasaba horas descubriendo el mundo del internet.
               </p>
             </AnimationOnScroll>
 

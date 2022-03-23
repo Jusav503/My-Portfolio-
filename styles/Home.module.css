@@ -2,7 +2,6 @@
   background: #0F2027;
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-
 }
 .main {
   padding: 0 0.5rem;
@@ -45,7 +44,7 @@
   justify-content: center;
 }
 .logoContent {
-  max-width: 100vh;
+  max-width: 60vh;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -107,7 +106,7 @@
     font-size: 2.7rem;
   }
   .logoContent {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {

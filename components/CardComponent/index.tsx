@@ -54,7 +54,7 @@ function CardComponent(props: cardProps) {
         <h1 id="title">{props.name}</h1>
         <div className={styles.drawerContainer}>
           <div>
-            <h2>Principales características:</h2>
+            <h3>Principales características:</h3>
             <ul className={styles.list}>
               {props.description.map((r) => (
                 <li key={r} style={{ color: "#3c3c3c" }}>
@@ -62,7 +62,6 @@ function CardComponent(props: cardProps) {
                 </li>
               ))}
             </ul>
-
             <Button
               title="Jusav503"
               className={styles.button}
@@ -90,7 +89,7 @@ function CardComponent(props: cardProps) {
         <h1 id="title">{props.name}</h1>
         <div className={styles.drawerContainer}>
           <div>
-            <h2>Principales características:</h2>
+            <h3>Principales características:</h3>
             <ul className={styles.list}>
               {props.description.map((r) => (
                 <li key={r} style={{ color: "#3c3c3c" }}>
