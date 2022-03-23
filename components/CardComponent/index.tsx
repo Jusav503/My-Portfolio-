@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useSpring, animated, to } from "react-spring";
 import { useGesture } from "@use-gesture/react";
 import styles from "./styles.module.css";
-import { Button, Drawer } from "@mantine/core";
+import { Button, Drawer, Modal } from "@mantine/core";
 import { BsGithub } from "react-icons/bs";
 
 interface cardProps {
@@ -43,6 +43,41 @@ function CardComponent(props: cardProps) {
           scale: to([scale, zoom], (s, z) => s + z),
         }}
       />
+
+      <Modal 
+        centered 
+        opened={opened} 
+        aria-labelledby="title"
+        onClose={() => setOpened(false)}
+        className={styles.modal}
+      >
+        <h1 id="title">{props.name}</h1>
+        <div className={styles.drawerContainer}>
+          <div>
+            <h2>Principales características:</h2>
+            <ul className={styles.list}>
+              {props.description.map((r) => (
+                <li key={r} style={{ color: "#3c3c3c" }}>
+                  - {r}
+                </li>
+              ))}
+            </ul>
+
+            <Button
+              title="Jusav503"
+              className={styles.button}
+              component="a"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.projectUrl}
+              leftIcon={<BsGithub style={{ fontSize: 26 }} />}
+            >
+              Ver proyecto
+            </Button>
+          </div>
+        </div>
+      </Modal>
+
       <Drawer
         opened={opened}
         onClose={() => setOpened(false)}
@@ -50,20 +85,20 @@ function CardComponent(props: cardProps) {
         padding="xl"
         position="bottom"
         size="xl"
+        className={styles.drawer}
       >
         <h1 id="title">{props.name}</h1>
         <div className={styles.drawerContainer}>
           <div>
-            <h2>Descripción</h2>
-            <p className={styles.paragraph}>Description</p>
             <h2>Principales características:</h2>
-            <ul>
+            <ul className={styles.list}>
               {props.description.map((r) => (
                 <li key={r} style={{ color: "#3c3c3c" }}>
                   - {r}
                 </li>
               ))}
             </ul>
+
             <Button
               title="Jusav503"
               className={styles.button}

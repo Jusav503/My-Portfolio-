@@ -20,14 +20,8 @@
   box-shadow: 0px 10px 30px -5px #3f2b96b6;
 }
 
-.drawerContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.paragraph {
-  color: rgb(92, 92, 92);
-}
+.drawer { overflow-y: scroll; display:none}
+.list {padding: 0px;}
 
 .button {
   background: #0f2027;
@@ -41,4 +35,17 @@
 }
 .button:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  .drawer {display:block}
+  .modal {display:none}
+  .drawerContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    width: 100%;
+  }
 }
