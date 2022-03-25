@@ -1,16 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Image } from "@mantine/core";
 
 import styles from "../styles/Home.module.css";
 import FooterComponent from "../components/FooterComponent";
 import ProjectsArticle from "./ProjectsArticle";
 import AboutMe from "./AboutMe";
-import ContactForm from "../components/ContactForm";
-import { Image } from "@mantine/core";
+import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container} style={{scrollBehavior:'smooth'}}>
+    <div className={styles.container} style={{ scrollBehavior: "smooth" }}>
       <Head>
         <title>Justice Velasco</title>
         <meta
@@ -60,12 +60,12 @@ const Home: NextPage = () => {
               <Image
                 src="https://seeklogo.com/images/R/react-spring-logo-757E1EF5B5-seeklogo.com.png"
                 alt="react spring logo"
-                style={{ width: 55, margin: 15, }}
+                style={{ width: 55, margin: 15 }}
               />
             </a>
           </div>
         </div>
-        <ContactForm />
+        <Contact />
       </main>
 
       <FooterComponent />
