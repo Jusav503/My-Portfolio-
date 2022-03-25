@@ -65,7 +65,7 @@ const Home: NextPage = () => {
             </a>
           </div>
         </div>
-        {/* <ContactForm /> */}
+        <ContactForm />
       </main>
 
       <FooterComponent />
