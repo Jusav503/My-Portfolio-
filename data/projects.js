@@ -1,6 +1,8 @@
 export default [
   {
     id: 1,
+    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/netflixlogo.png",
+    altLogo:"netflix logo",
     image: "https://jusapp.s3.eu-central-1.amazonaws.com/netflix.jpg",
     altImage: "netflix clone",
     name: "Interfaz de Netflix",
@@ -15,6 +17,8 @@ export default [
   },
   {
     id: 2,
+    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/bitcoinlogo.png",
+    altLogo:"bitcoin logo",
     image: "https://jusapp.s3.eu-central-1.amazonaws.com/jusavcoin2.jpg",
     altImage: "cripto info",
     name: "Jusavcoin",
@@ -29,6 +33,8 @@ export default [
   },
   {
     id: 3,
+    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/amazonlogo.webp",
+    altLogo:"amazon logo",
     image: "https://jusapp.s3.eu-central-1.amazonaws.com/amazonimage.jpg",
     altImage: "amazon clone",
     name: "Interfaz de Amazon",
@@ -44,6 +50,8 @@ export default [
   },
   {
     id: 4,
+    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/teslalogo.png",
+    altLogo:"tesla logo",
     image: "https://jusapp.s3.eu-central-1.amazonaws.com/teslaimage.jpg",
     altImage: "tesla clone",
     name: "Interfaz de Tesla web",
@@ -56,6 +64,8 @@ export default [
   },
   {
     id: 5,
+    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/tictactoelogo.png",
+    altLogo:"tictactoe game",
     image: "https://jusapp.s3.eu-central-1.amazonaws.com/tictactoe.jpg",
     altImage: "Juego TicTacToe",
     name: "TicTacToe game",
@@ -68,6 +78,8 @@ export default [
   },
   {
     id: 6,
+    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/tiktoklogo.png",
+    altLogo:"tiktok logo",
     image: "https://jusapp.s3.eu-central-1.amazonaws.com/tiktokimage.jpg",
     altImage: "tiktok clone",
     name: "Interfaz de TikTok",

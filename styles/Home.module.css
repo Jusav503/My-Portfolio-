@@ -1,7 +1,7 @@
 .container {
-  background: #0F2027;
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: #0f0e17;
+  /* background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
 }
 .main {
   padding: 0 0.5rem;
@@ -44,7 +44,7 @@
   justify-content: center;
 }
 .logoContent {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,8 +67,8 @@
     justify-items: center;
     align-items: center;
   }
-  .logo{
-    width:120px;
+  .logo {
+    width: 120px;
   }
 }
 @media (min-width: 600px) {

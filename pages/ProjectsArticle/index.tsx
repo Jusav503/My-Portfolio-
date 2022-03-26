@@ -20,6 +20,8 @@ function ProjectsArticle() {
                     name={project.name}
                     description={project.description}
                     projectUrl={project.projectUrl}
+                    logo={project.logo}
+                    altLogo={project.altLogo}
                   />
                 </div>
               );

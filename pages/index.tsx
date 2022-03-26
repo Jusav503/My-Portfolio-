@@ -10,7 +10,7 @@ import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container} style={{ scrollBehavior: "smooth" }}>
+    <div className={styles.container}>
       <Head>
         <title>Justice Velasco</title>
         <meta

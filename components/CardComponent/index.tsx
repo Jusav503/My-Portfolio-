@@ -8,6 +8,8 @@ import { BsGithub } from "react-icons/bs";
 interface cardProps {
   image: string;
   altImage: string;
+  logo: string;
+  altLogo: string;
   name: string;
   description: string[];
   projectUrl: string;
@@ -33,16 +35,16 @@ function CardComponent(props: cardProps) {
 
   return (
     <div className={styles.container}>
-      <animated.img
+      <animated.div
         ref={target}
-        src={props.image}
-        alt={props.altImage}
         onClick={() => setOpened(true)}
         className={styles.card}
         style={{
           scale: to([scale, zoom], (s, z) => s + z),
         }}
-      />
+      >
+        <img src={props.logo} alt={props.altLogo} className={styles.cardImage} />
+      </animated.div>
 
       <Modal 
         centered 
