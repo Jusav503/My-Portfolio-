@@ -1,61 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.aboutMe {
+  padding: 1rem;
+}
+.presentationContainer {
+  margin: auto;
+}
+.presentationGrid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+}
 .mainTitle {
-  color: white;
-  font-size: 7vw;
-  margin-bottom: 0%;
-}
-.sectionMain {
-  max-width:70rem;
-  margin:auto;
-}
-.paragraph {
-  color: white;
+  font-size: 2.6rem;
+  margin: 0;
+  text-align: left;
 }
 .image {
+  border: 3px solid black;
+  box-shadow: 0px 10px 30px -5px #000000;
+  grid-row: 2;
+  margin: 30px;
+}
+
+.sectionMain {
+  max-width: 70rem;
   margin: auto;
-  border-radius: 10px;
-  box-shadow: 3px 2px 20px 2px rgba(168, 54, 54, 0.781);
+}
+.sectionMain p {
+  font-size: 1.2rem;
+  color: #2d334a;
+}
+.sectionMain h3 {
+  padding: 5px;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  border-style: solid solid none;
+  border-color: black;
+  border-width: 3px;
+  align-self: flex-end;
 }
 
 @media (max-width: 600px) {
+  .presentationContainer {
+    width: 100%;
+  }
+
   .gridContainer {
-    display:grid;
     grid-template-columns: 1fr;
     row-gap: 15px;
-    padding-top:10px;
+    padding-top: 10px;
   }
-  .image {
-    width: 12rem;
-    grid-row: 1;
-    margin:auto;
+  .paragraph {
+    font-size: medium;
   }
 }
 @media (min-width: 600px) {
-  .mainTitle{ text-align: center;}
+  .presentationContainer {
+    width: 90%;
+  }
+
   .sectionMain {
-    margin-top:3rem;
+    margin-top: 3rem;
   }
   .gridContainer {
-    display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
     row-gap: 15px;
   }
-  .image {
-    width: 15rem;
-    grid-row: 1;
-  }
 }
 @media (min-width: 768px) {
+  .presentationGrid {
+    grid-template-columns: 2fr 1fr;
+  }
+  .image {
+    max-width: 400px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .mainTitle {
+    font-size: 3.5rem;
+  }
+
   .gridContainer {
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: none;
   }
-  .image {
-    grid-column: 2;
-  } 
-  .paragraph {
-    font-size: 1.3rem;
+}
+@media (min-width: 1200px) {
+  .presentationContainer {
+    max-width: 70%;
   }
 }

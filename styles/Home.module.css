@@ -1,22 +1,16 @@
 .container {
-  background: #0f0e17;
-  /* background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+  background: white;
 }
 .main {
-  padding: 0 0.5rem;
   min-height: 100vh;
 }
 
 /* Presentation */
 .articleContainer {
   width: 100%;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
 }
 .articleContent {
   display: grid;
@@ -37,7 +31,7 @@
 
 /* Logo section */
 .logoContainer {
-  background-color: white;
+  box-shadow: 0px 10px 100px 5px white;
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -86,35 +80,22 @@
   }
 }
 @media (min-width: 768px) {
-  .main {
-    padding: 0 2rem;
+  .mainTitle {
+    font-size: 4rem;
   }
-  .articleText {
-    max-width: 55vh;
+  .mainParagraph {
+    font-size: 2rem;
   }
   .mainImage {
     grid-column: 2;
-    justify-content: flex-start;
-  }
-  .mainTitle {
-    font-size: 4.7rem;
-    right: 3rem;
-  }
-  .mainParagraph {
-    font-size: 2.7rem;
+    margin:30px;
   }
 }
 @media (min-width: 1200px) {
-  .articleText {
-    max-width: 85vh;
-  }
   .mainTitle {
-    font-size: 7rem;
+    font-size: 4.7rem;
   }
   .mainParagraph {
-    font-size: 4rem;
-  }
-  .mainImage {
-    width: 180px;
+    font-size: 2.5rem;
   }
 }

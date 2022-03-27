@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .footer {
-  background-color:white;
   display: flex;
   flex: 1;
   padding: 2rem 0;

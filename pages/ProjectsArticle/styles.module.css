@@ -1,16 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .projectsContainer {
-  background-color: rgb(255, 255, 255);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  margin-top: 180px;
   display: flex;
   justify-content:center;
 }
-.topContent {
-  margin-top: -170px;
-}
 .mainTitle {
-  color: white;
+  font-family: 'Press Start 2P', cursive;
   letter-spacing: 1px;
   text-align: center;
   font-size: xx-large;

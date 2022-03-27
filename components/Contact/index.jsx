@@ -5,6 +5,7 @@ import { Textarea, TextInput, Group, Button, Modal } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import { ButtonLink } from "../atoms";
 
 function Contact() {
   const [opened, setOpened] = useState(false);
@@ -37,29 +38,20 @@ function Contact() {
   return (
     <div className={styles.container}>
       <section className={styles.contactContainer}>
-        <a
-          href="https://github.com/Jusav503"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.github}
-        >
-          <BsGithub color="white" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/justice-velasco/"
-          className={styles.linkendin}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <BsLinkedin color="white" />
-        </a>
+        <ButtonLink link="https://github.com/Jusav503">
+          <BsGithub color="#24292d" />
+        </ButtonLink>
 
-        <button onClick={() => setOpened(true)} className={styles.email}>
-          <MdEmail color="white" />
-        </button>
+        <ButtonLink link="https://www.linkedin.com/in/justice-velasco/">
+          <BsLinkedin color="#24292d" />
+        </ButtonLink>
+
+        <ButtonLink>
+          <MdEmail color="#24292d" onClick={() => setOpened(true)} />
+        </ButtonLink>
       </section>
 
-      <Modal opened={opened} onClose={() => setOpened(false)} >
+      <Modal opened={opened} onClose={() => setOpened(false)}>
         <form onSubmit={form.onSubmit(sendEmail)}>
           <TextInput
             name="name"
@@ -83,7 +75,9 @@ function Contact() {
             {...form.getInputProps("message")}
           />
           <Group position="right" mt="md">
-            <Button type="submit" color="white" >Enviar</Button>
+            <Button type="submit" color="#24292d">
+              Enviar
+            </Button>
           </Group>
         </form>
       </Modal>
