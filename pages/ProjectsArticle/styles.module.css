@@ -1,38 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .projectsContainer {
-  display: flex;
-  justify-content:center;
+  margin:auto;
+}
+.titleContainer{
+  display:flex;
 }
 .mainTitle {
-  font-family: 'Press Start 2P', cursive;
+  padding: 5px;
   letter-spacing: 1px;
-  text-align: center;
-  font-size: xx-large;
-  margin-bottom: 0%;
+  font-size: 1.6rem;
+  border-style: solid solid none;
+  border-color: black;
+  border-width: 3px;
+  align-self: flex-end;
 }
 .projectsContent {
   display: grid;
-  max-width: 80%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-@media (max-width: 600px) {
-  .projectsContent {
-    grid-template-columns: 1fr;
-    max-width: 100%;
-  }
-}
-@media (min-width: 600px) {
-  .projectsContent {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
+  margin:auto;
+  gap: 1.5em;
 }
 @media (min-width: 768px) {
-  .projectsContent {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 992px) {
   .projectsContent {
     grid-template-columns: 1fr 1fr;
   }

@@ -7,6 +7,7 @@ import FooterComponent from "../components/FooterComponent";
 import ProjectsArticle from "./ProjectsArticle";
 import AboutMe from "./AboutMe";
 import Contact from "../components/Contact";
+import LogosComponent from "../components/LogosComponent";
 
 const Home: NextPage = () => {
   return (
@@ -21,50 +22,19 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <article className={styles.articleContainer}>
-          <div className={styles.articleContent}>
-            <div className={styles.articleText}>
-              <h1 className={styles.mainTitle}>Justice Velasco</h1>
-              <p className={styles.mainParagraph}>
-                "The little front-end web/mobile developer"
-              </p>
-            </div>
-            <Image
-              src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
-              alt="pixel Justice"
-              className={styles.mainImage}
-            />
-          </div>
-        </article>
+        <figure className={styles.logoContainer}>
+          <Image
+            src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
+            alt="pixel Justice"
+            className={styles.logo}
+          />
+          <span className={styles.logoTitle}>Jusav</span>
+        </figure>
 
         <AboutMe />
         <ProjectsArticle />
 
-        <div className={styles.logoContainer}>
-          <div className={styles.logoContent}>
-            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-              <Image
-                src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"
-                alt="logo react"
-                className={styles.logo}
-              />
-            </a>
-            <a href="https://mantine.dev/" target="_blank" rel="noreferrer">
-              <Image
-                src="https://miro.medium.com/max/1400/1*28sUAZod6N5ptJndb5CAng.png"
-                alt="mantine logo"
-                className={styles.logo}
-              />
-            </a>
-            <a href="https://react-spring.io/" target="_blank" rel="noreferrer">
-              <Image
-                src="https://seeklogo.com/images/R/react-spring-logo-757E1EF5B5-seeklogo.com.png"
-                alt="react spring logo"
-                style={{ width: 55, margin: 15 }}
-              />
-            </a>
-          </div>
-        </div>
+        <LogosComponent/>
         <Contact />
       </main>
 

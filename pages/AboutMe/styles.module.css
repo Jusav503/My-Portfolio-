@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-.aboutMe {
-  padding: 1rem;
-}
 .presentationContainer {
   margin: auto;
 }
@@ -13,8 +10,6 @@
   grid-template-columns: 1fr;
 }
 .mainTitle {
-  font-size: 2.6rem;
-  margin: 0;
   text-align: left;
 }
 .image {
@@ -25,11 +20,9 @@
 }
 
 .sectionMain {
-  max-width: 70rem;
   margin: auto;
 }
 .sectionMain p {
-  font-size: 1.2rem;
   color: #2d334a;
 }
 .sectionMain h3 {
@@ -46,6 +39,9 @@
   .presentationContainer {
     width: 100%;
   }
+  .mainTitle {
+    font-size: 2.1rem;
+  }
 
   .gridContainer {
     grid-template-columns: 1fr;
@@ -57,10 +53,6 @@
   }
 }
 @media (min-width: 600px) {
-  .presentationContainer {
-    width: 90%;
-  }
-
   .sectionMain {
     margin-top: 3rem;
   }
@@ -74,13 +66,13 @@
   .presentationGrid {
     grid-template-columns: 2fr 1fr;
   }
+  .mainTitle {
+    font-size: 3rem;
+  }
   .image {
     max-width: 400px;
     grid-column: 2;
     grid-row: 1;
-  }
-  .mainTitle {
-    font-size: 3.5rem;
   }
 
   .gridContainer {
@@ -89,9 +81,12 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: none;
   }
+  .sectionMain p {
+    font-size: 1.2rem;
+  }
 }
-@media (min-width: 1200px) {
-  .presentationContainer {
-    max-width: 70%;
+@media (min-width: 1400px) {
+  .mainTitle {
+    font-size: 4rem;
   }
 }

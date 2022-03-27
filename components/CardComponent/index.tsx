@@ -3,7 +3,7 @@ import { useSpring, animated, to } from "react-spring";
 import { useGesture } from "@use-gesture/react";
 import styles from "./styles.module.css";
 import { Button, Drawer, Modal } from "@mantine/core";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsPlusSquare } from "react-icons/bs";
 
 interface cardProps {
   image: string;
@@ -43,12 +43,27 @@ function CardComponent(props: cardProps) {
           scale: to([scale, zoom], (s, z) => s + z),
         }}
       >
-        <img src={props.logo} alt={props.altLogo} className={styles.cardImage} />
+        <img
+          src={props.logo}
+          alt={props.altLogo}
+          className={styles.cardImage}
+        />
+        <div className={styles.content}>
+          <p></p>
+
+          <Button
+            className={styles.cardButton}
+            title="Ver más"
+            leftIcon={<BsPlusSquare style={{ fontSize: 26 }} />}
+          >
+            Ver más
+          </Button>
+        </div>
       </animated.div>
 
-      <Modal 
-        centered 
-        opened={opened} 
+      <Modal
+        centered
+        opened={opened}
         aria-labelledby="title"
         onClose={() => setOpened(false)}
         className={styles.modal}
