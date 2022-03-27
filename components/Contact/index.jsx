@@ -39,15 +39,15 @@ function Contact() {
     <div className={styles.container}>
       <section className={styles.contactContainer}>
         <ButtonLink link="https://github.com/Jusav503">
-          <BsGithub color="#24292d" />
+          <BsGithub color="black" />
         </ButtonLink>
 
         <ButtonLink link="https://www.linkedin.com/in/justice-velasco/">
-          <BsLinkedin color="#24292d" />
+          <BsLinkedin color="black" />
         </ButtonLink>
 
         <ButtonLink>
-          <MdEmail color="#24292d" onClick={() => setOpened(true)} />
+          <MdEmail color="black" onClick={() => setOpened(true)} />
         </ButtonLink>
       </section>
 

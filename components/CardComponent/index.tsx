@@ -51,13 +51,10 @@ function CardComponent(props: cardProps) {
         <div className={styles.content}>
           <p></p>
 
-          <Button
-            className={styles.cardButton}
-            title="Ver más"
-            leftIcon={<BsPlusSquare style={{ fontSize: 26 }} />}
-          >
+          <span className={styles.button} title="Ver más">
+            <BsPlusSquare className={styles.buttonIcon} />
             Ver más
-          </Button>
+          </span>
         </div>
       </animated.div>
 
@@ -68,29 +65,26 @@ function CardComponent(props: cardProps) {
         onClose={() => setOpened(false)}
         className={styles.modal}
       >
-        <h1 id="title">{props.name}</h1>
-        <div className={styles.drawerContainer}>
-          <div>
-            <h3>Principales características:</h3>
-            <ul className={styles.list}>
-              {props.description.map((r) => (
-                <li key={r} style={{ color: "#3c3c3c" }}>
-                  - {r}
-                </li>
-              ))}
-            </ul>
-            <Button
-              title="Jusav503"
-              className={styles.button}
-              component="a"
-              target="_blank"
-              rel="noopener noreferrer"
-              href={props.projectUrl}
-              leftIcon={<BsGithub style={{ fontSize: 26 }} />}
-            >
-              Ver proyecto
-            </Button>
-          </div>
+        <div className={styles.modalContent}>
+          <h1 id="title">{props.name}</h1>
+          <h3>Principales características:</h3>
+          <ul className={styles.list}>
+            {props.description.map((r) => (
+              <li key={r} style={{ color: "#3c3c3c" }}>
+                - {r}
+              </li>
+            ))}
+          </ul>
+          <a
+            title="Jusav503"
+            className={styles.button}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.projectUrl}
+          >
+            <BsGithub className={styles.buttonIcon} />
+            Ver proyecto
+          </a>
         </div>
       </Modal>
 

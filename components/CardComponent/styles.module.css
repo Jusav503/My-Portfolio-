@@ -1,7 +1,7 @@
 .card {
   width: 100%;
   height: 350px;
-  padding:1rem;
+  padding: 1rem;
   box-shadow: 0px 10px 30px -5px #9ab7ff;
   cursor: pointer;
   border-style: solid;
@@ -18,17 +18,19 @@
 }
 .content {
   display: flex;
-  height:200px;
+  height: 200px;
   flex-direction: column;
   justify-content: space-between;
 }
-.cardButton {
-  background-color: black;
-  width: 100%;
-  align-content: flex-end;
+
+.modalContent {
+  margin-top: -15px;
 }
-.cardButton:hover {
-  background-color:grey;
+.modalContent h1 {
+  margin-bottom: 10px;
+}
+.modalContent ul {
+  margin-top: 0;
 }
 
 .drawer {
@@ -40,17 +42,27 @@
 }
 
 .button {
-  background: #0f2027;
-  background: -webkit-linear-gradient(to top, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
-  box-shadow: 0px 10px 30px -5px #0f2027;
   width: 100%;
-  height: 3rem;
-  font-size: large;
-  border: 0px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.buttonIcon {
+  font-size: 26px;
+  color: white;
+  margin-right: 10px;
 }
 .button:hover {
-  opacity: 0.9;
+  opacity: 0.7;
+  color: white;
+}
+.button:hover .buttonIcon {
+  color: white;
 }
 
 @media (max-width: 992px) {
@@ -59,10 +71,5 @@
   }
   .modal {
     display: none;
-  }
-  .drawerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
