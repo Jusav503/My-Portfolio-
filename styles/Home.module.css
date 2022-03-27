@@ -12,27 +12,42 @@
 .logoContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
 }
 .logo {
   width: 60px;
+  margin: auto;
+}
+.logoTitleContainer{
+  padding: 2px 5px;
+  background-color: black;
 }
 .logoTitle {
-  padding: 10px;
   font-weight: bold;
   font-family: "Press Start 2P", cursive;
-  background-color: black;
   color: white;
 }
 /* End presentation */
 
 @media (max-width: 1024px) {
   .container {
-    padding:20px;
+    padding: 20px;
+  }
+  .logo {
+    width: 30px;
+  }
+  .logoContainer{
+    margin:10px 0;
+  }
+  .logoTitle {
+    font-size: 10px;
   }
 }
 @media (min-width: 1024px) {
   .container {
     max-width: 70%;
+  }
+  .logoTitleContainer{
+    padding: 5px 10px;
   }
 }

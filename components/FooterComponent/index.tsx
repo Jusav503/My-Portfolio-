@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useTransition, animated, config } from "react-spring";
 import styles from "./styles.module.css"
 
-function Toggle() {
+export function Toggle() {
   const [toggle, set] = useState(false);
   const transitions = useTransition(toggle, {
     from: { opacity: 0 },
@@ -21,7 +21,7 @@ function Toggle() {
           opacity: opacity.to({ range: [0.0, 1.0], output: [0, 1] }),
         }}
       >
-        🙂
+        😁
       </animated.div>
     ) : (
       <animated.div
@@ -30,7 +30,7 @@ function Toggle() {
           opacity: opacity.to({ range: [1.0, 0.0], output: [1, 0] }),
         }}
       >
-        😉
+        🙂
       </animated.div>
     )
   );

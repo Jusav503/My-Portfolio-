@@ -2,6 +2,7 @@
 
 .presentationContainer {
   margin: auto;
+  height:65vh;
 }
 .presentationGrid {
   display: grid;

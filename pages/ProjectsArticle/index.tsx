@@ -25,6 +25,7 @@ function ProjectsArticle() {
                   projectUrl={project.projectUrl}
                   logo={project.logo}
                   altLogo={project.altLogo}
+                  features={project.features}
                 />
               </div>
             );

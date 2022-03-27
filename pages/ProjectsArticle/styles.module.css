@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .projectsContainer {
-  margin:auto;
+  margin: 100px auto;
 }
 .titleContainer{
   display:flex;
@@ -14,11 +14,13 @@
   border-width: 3px;
   align-self: flex-end;
 }
+.projectsMain {
+  margin:auto;
+}
 .projectsContent {
   display: grid;
   grid-template-columns: 1fr;
-  margin:auto;
-  gap: 1.5em;
+  gap: 1.4em;
 }
 @media (min-width: 768px) {
   .projectsContent {
@@ -27,11 +29,11 @@
 }
 @media (min-width: 1200px) {
   .projectsContent {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1440px) {
   .projectsContent {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

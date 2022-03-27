@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useSpring, animated, to } from "react-spring";
 import { useGesture } from "@use-gesture/react";
 import styles from "./styles.module.css";
-import { Button, Drawer, Modal } from "@mantine/core";
+import { Drawer, Modal } from "@mantine/core";
 import { BsGithub, BsPlusSquare } from "react-icons/bs";
 
 interface cardProps {
@@ -11,7 +11,8 @@ interface cardProps {
   logo: string;
   altLogo: string;
   name: string;
-  description: string[];
+  description: string;
+  features: string[];
   projectUrl: string;
 }
 function CardComponent(props: cardProps) {
@@ -49,7 +50,7 @@ function CardComponent(props: cardProps) {
           className={styles.cardImage}
         />
         <div className={styles.content}>
-          <p></p>
+          <p>{props.description}</p>
 
           <span className={styles.button} title="Ver más">
             <BsPlusSquare className={styles.buttonIcon} />
@@ -69,7 +70,7 @@ function CardComponent(props: cardProps) {
           <h1 id="title">{props.name}</h1>
           <h3>Principales características:</h3>
           <ul className={styles.list}>
-            {props.description.map((r) => (
+            {props.features.map((r) => (
               <li key={r} style={{ color: "#3c3c3c" }}>
                 - {r}
               </li>
@@ -95,32 +96,31 @@ function CardComponent(props: cardProps) {
         padding="xl"
         position="bottom"
         size="xl"
-        className={styles.drawer}
+        className={styles.drawerContainer}
       >
         <h1 id="title">{props.name}</h1>
-        <div className={styles.drawerContainer}>
+        <div className={styles.drawerContent}>
           <div>
             <h3>Principales características:</h3>
             <ul className={styles.list}>
-              {props.description.map((r) => (
+              {props.features.map((r) => (
                 <li key={r} style={{ color: "#3c3c3c" }}>
                   - {r}
                 </li>
               ))}
             </ul>
-
-            <Button
-              title="Jusav503"
-              className={styles.button}
-              component="a"
-              target="_blank"
-              rel="noopener noreferrer"
-              href={props.projectUrl}
-              leftIcon={<BsGithub style={{ fontSize: 26 }} />}
-            >
-              Ver proyecto
-            </Button>
           </div>
+
+          <a
+            title="Jusav503"
+            className={styles.button}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.projectUrl}
+          >
+            <BsGithub className={styles.buttonIcon} />
+            Ver proyecto
+          </a>
         </div>
       </Drawer>
     </div>

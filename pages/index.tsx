@@ -23,12 +23,16 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <figure className={styles.logoContainer}>
-          <Image
-            src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
-            alt="pixel Justice"
-            className={styles.logo}
-          />
-          <span className={styles.logoTitle}>Jusav</span>
+          <div style={{alignSelf: "flex-start"}}>
+            <Image
+              src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
+              alt="pixel Justice"
+              className={styles.logo}
+            />
+            <div className={styles.logoTitleContainer}>
+              <span className={styles.logoTitle}>Jusav</span>
+            </div>
+          </div>
         </figure>
 
         <AboutMe />
