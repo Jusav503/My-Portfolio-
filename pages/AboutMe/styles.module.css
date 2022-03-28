@@ -2,7 +2,7 @@
 
 .presentationContainer {
   margin: auto;
-  height:65vh;
+  height: 65vh;
 }
 .presentationGrid {
   display: grid;
@@ -38,7 +38,7 @@
 
 @media (max-width: 600px) {
   .presentationContainer {
-    width: 100%;
+    height: auto;
   }
   .mainTitle {
     font-size: 2.1rem;
@@ -54,6 +54,12 @@
   }
 }
 @media (min-width: 600px) {
+  .presentationContainer {
+    height: auto;
+  }
+  .mainTitle {
+    font-size: 3rem;
+  }
   .sectionMain {
     margin-top: 3rem;
   }
@@ -66,9 +72,6 @@
 @media (min-width: 768px) {
   .presentationGrid {
     grid-template-columns: 2fr 1fr;
-  }
-  .mainTitle {
-    font-size: 3rem;
   }
   .image {
     max-width: 400px;
