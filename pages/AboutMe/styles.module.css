@@ -1,21 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
 .sectionMain {
-  margin: 0;
+  padding-top: 60px;
+}
+.articleContainer{
+  padding-top: 100px;
+}
+.articleTitle{
+  border-bottom: 1px solid white
+}
+.titleContainer {
+  margin-top: 60px;
+  margin-bottom: -60px;
+}
+.titleContainer h2{
+  font-size:3rem;
+  font-weight: 800;
+  color: orange;
+}
+.sectionMain h3 {
+  padding: 2px;
+  border-width: 1px;
+  align-self: flex-end;
+  background-color: grey;
+  color: #30cfd0;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-style: solid solid none;
+  border-color: white;
 }
 .paragraph {
   color: rgba(255, 255, 255, 0.808);
-}
-.sectionMain h3 {
-  background-color: grey;
-  color: #30CFD0;
-  padding: 5px;
-  letter-spacing: 1px;
-  font-size: 1.6rem;
-  border-style: solid solid none;
-  border-color: white;
-  border-width: 2px;
-  align-self: flex-end;
 }
 
 @media (max-width: 600px) {
@@ -44,5 +58,13 @@
   }
   .sectionMain p {
     font-size: 1.2rem;
+  }
+  .sectionMain h3 {
+    font-size: 1.6rem;
+    padding: 5px;
+    border-width: 2px;
+  }
+  .articleTitle{ 
+    border-bottom: 2px solid white
   }
 }

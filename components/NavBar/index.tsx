@@ -16,10 +16,18 @@ function NavBar() {
 
       <div className="hidden md:block">
         <ul>
-          <li>Inicio</li>
-          <li>Sobre mí</li>
-          <li>Proyectos</li>
-          <li>Contacto</li>
+          <a href="#inicio">
+            <li>Inicio</li>
+          </a>
+          <a href="#sobre-mi">
+            <li>Sobre mí</li>
+          </a>
+          <a href="#proyectos">
+            <li>Proyectos</li>
+          </a>
+          <a href="#contacto">
+            <li>Contacto</li>
+          </a>
         </ul>
       </div>
 
@@ -31,17 +39,25 @@ function NavBar() {
         opened={opened}
         onClose={() => setOpened(false)}
         padding="xl"
-        size="xl"
+        size="md"
         styles={{
           drawer: { backgroundColor: "#1b1b1b" },
         }}
       >
         <div style={{ color: "red" }}>
           <ul>
-            <li>Inicio</li>
-            <li>Sobre mí</li>
-            <li>Proyectos</li>
-            <li>Contacto</li>
+            <a href="#inicio">
+              <li>Inicio</li>
+            </a>
+            <a href="#sobre-mi">
+              <li>Sobre mí</li>
+            </a>
+            <a href="#proyectos">
+              <li>Proyectos</li>
+            </a>
+            <a href="#contacto">
+              <li>Contacto</li>
+            </a>
           </ul>
         </div>
       </Drawer>

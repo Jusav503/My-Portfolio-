@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-.titleContainer{
-  display:flex;
+.projectsContainer {
+  padding-top: 100px;
 }
-.mainTitle {
-  color:#30CFD0;
-  background-color:grey;
-  padding: 5px;
+.titleContainer {
+  display: flex;
+  border-bottom: 1px solid white;
+  margin-bottom: 25px;
+}
+.title {
+  color: #30cfd0;
+  background-color: grey;
+  padding: 2px;
   letter-spacing: 1px;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   border-style: solid solid none;
   border-color: white;
-  border-width: 2px;
+  border-width: 1px;
   align-self: flex-end;
 }
 
 .projectsMain {
-  margin:auto;
+  margin: auto;
 }
 .projectsContent {
   display: grid;
@@ -26,6 +31,14 @@
 @media (min-width: 768px) {
   .projectsContent {
     grid-template-columns: 1fr 1fr;
+  }
+  .titleContainer{
+    border-bottom: 2px solid white;
+  }
+  .title{
+    font-size: 1.6rem;
+    padding: 5px;
+    border-width: 2px;
   }
 }
 @media (min-width: 1200px) {

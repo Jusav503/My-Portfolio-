@@ -23,12 +23,20 @@ const Home: NextPage = () => {
         <NavBar />
       </header>
       <main className={styles.main}>
-        <Presentation />
-        <AboutMe />
-        <ProjectsArticle />
+        <div id="inicio">
+          <Presentation />
+        </div>
+        <div id="sobre-mi">
+          <AboutMe />
+        </div>
+        <div id="proyectos">
+          <ProjectsArticle />
+        </div>
       </main>
 
-      <FooterComponent />
+      <div id="contacto">
+        <FooterComponent />
+      </div>
     </div>
   );
 };

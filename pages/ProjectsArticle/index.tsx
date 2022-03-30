@@ -5,11 +5,9 @@ import projects from "../../data/projects";
 
 function ProjectsArticle() {
   return (
-    <article id="projects" className={styles.projectsContainer}>
-      <div style={{borderBottom: "2px solid white", marginBottom:"25px"}}>
-        <div className={styles.titleContainer}>
-          <h1 className={styles.mainTitle}>Mis proyectos</h1>
-        </div>
+    <article className={styles.projectsContainer}>
+      <div className={styles.titleContainer}>
+        <h1 className={styles.title}>Mis proyectos</h1>
       </div>
 
       <div className={styles.projectsMain}>
