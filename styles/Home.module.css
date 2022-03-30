@@ -1,53 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .container {
-  background: white;
-  margin: auto;
+  background-color: #212121;
 }
 .main {
   min-height: 100vh;
-}
-
-/* Presentation */
-.logoContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.logo {
-  width: 60px;
   margin: auto;
+  margin-top:-20px;
 }
-.logoTitleContainer{
-  padding: 2px 5px;
-  background-color: black;
-}
-.logoTitle {
-  font-weight: bold;
-  font-family: "Press Start 2P", cursive;
-  color: white;
-}
-/* End presentation */
 
 @media (max-width: 1024px) {
   .container {
     padding: 20px;
   }
-  .logo {
-    width: 30px;
-  }
-  .logoContainer{
-    margin:10px 0;
-  }
-  .logoTitle {
-    font-size: 10px;
-  }
 }
 @media (min-width: 1024px) {
-  .container {
+  .main {
     max-width: 70%;
-  }
-  .logoTitleContainer{
-    padding: 5px 10px;
   }
 }

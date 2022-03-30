@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useTransition, animated, config } from "react-spring";
-import styles from "./styles.module.css"
+import LogosComponent from "../LogosComponent";
+import styles from "./styles.module.css";
 
 export function Toggle() {
   const [toggle, set] = useState(false);
@@ -15,7 +16,7 @@ export function Toggle() {
   });
   return transitions(({ opacity }, item) =>
     item ? (
-      <animated.div        
+      <animated.div
         className={styles.toggle}
         style={{
           opacity: opacity.to({ range: [0.0, 1.0], output: [0, 1] }),
@@ -38,11 +39,14 @@ export function Toggle() {
 
 function FooterComponent() {
   return (
-    <footer className={styles.footer}>
-      <span className={styles.footerTitle}>Justice Velasco</span>
-      <Toggle/>
+    <footer className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+      <LogosComponent />
+      <div className={styles.footer}>
+        <span className={styles.footerTitle}>Justice Velasco</span>
+        <Toggle />
+      </div>
     </footer>
-  )
+  );
 }
 
 export default FooterComponent;

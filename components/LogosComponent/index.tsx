@@ -15,9 +15,9 @@ function LogosComponent() {
         </a>
         <a href="https://mantine.dev/" target="_blank" rel="noreferrer">
           <Image
-            src="https://miro.medium.com/max/1400/1*28sUAZod6N5ptJndb5CAng.png"
+            src="https://jusapp.s3.eu-central-1.amazonaws.com/mantine.png"
             alt="mantine logo"
-            className={styles.logo}
+            style={{ width: 60, margin: 15 }}
           />
         </a>
         <a href="https://react-spring.io/" target="_blank" rel="noreferrer">

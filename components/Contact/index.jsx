@@ -38,17 +38,43 @@ function Contact() {
   return (
     <div className={styles.container}>
       <section className={styles.contactContainer}>
-        <ButtonLink link="https://github.com/Jusav503">
-          <BsGithub color="black" />
-        </ButtonLink>
+        <div
+          style={{
+            background: "#171B22",
+            borderRadius: "50%",
+            boxShadow: "0px 10px 30px -5px #171B22",
+          }}
+        >
+          <ButtonLink link="https://github.com/Jusav503">
+            <BsGithub color="white" />
+          </ButtonLink>
+        </div>
 
-        <ButtonLink link="https://www.linkedin.com/in/justice-velasco/">
-          <BsLinkedin color="black" />
-        </ButtonLink>
+        <div
+          style={{
+            background: "#2572B0",
+            borderRadius: "50%",
+            marginLeft: "10px",
+            marginRight: "10px",
+            boxShadow: "0px 10px 30px -5px #2572B0",
+          }}
+        >
+          <ButtonLink link="https://www.linkedin.com/in/justice-velasco/">
+            <BsLinkedin color="white" />
+          </ButtonLink>
+        </div>
 
-        <ButtonLink>
-          <MdEmail color="black" onClick={() => setOpened(true)} />
-        </ButtonLink>
+        <div
+          style={{
+            background: "#B31C16",
+            borderRadius: "50%",
+            boxShadow: "0px 10px 30px -5px #B31C16",
+          }}
+        >
+          <ButtonLink>
+            <MdEmail color="white" onClick={() => setOpened(true)} />
+          </ButtonLink>
+        </div>
       </section>
 
       <Modal opened={opened} onClose={() => setOpened(false)}>

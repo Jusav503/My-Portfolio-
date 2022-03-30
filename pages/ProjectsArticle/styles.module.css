@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-.projectsContainer {
-  margin: 100px auto;
-}
+
 .titleContainer{
   display:flex;
 }
 .mainTitle {
+  color:#30CFD0;
+  background-color:grey;
   padding: 5px;
   letter-spacing: 1px;
   font-size: 1.6rem;
   border-style: solid solid none;
-  border-color: black;
-  border-width: 3px;
+  border-color: white;
+  border-width: 2px;
   align-self: flex-end;
 }
+
 .projectsMain {
   margin:auto;
 }
 .projectsContent {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.4em;
+  gap: 15px;
 }
 @media (min-width: 768px) {
   .projectsContent {

@@ -37,21 +37,53 @@ function CardComponent(props: cardProps) {
   return (
     <div className={styles.container}>
       <animated.div
+        className={styles.card}
         ref={target}
         onClick={() => setOpened(true)}
-        className={styles.card}
         style={{
           scale: to([scale, zoom], (s, z) => s + z),
         }}
       >
-        <img
-          src={props.logo}
-          alt={props.altLogo}
-          className={styles.cardImage}
-        />
-        <div className={styles.content}>
-          <p>{props.description}</p>
+        <div style={{ display: "flex", backgroundColor: "grey", padding: 10 }}>
+          <div
+            style={{
+              backgroundColor: "#F55E54",
+              width: 10,
+              height: 10,
+              borderRadius: "50%",
+            }}
+          ></div>
+          <div
+            style={{
+              backgroundColor: "#F9BC0D",
+              width: 10,
+              height: 10,
+              borderRadius: "50%",
+              marginLeft: 10,
+              marginRight: 10,
+            }}
+          ></div>
+          <div
+            style={{
+              backgroundColor: "#49C933",
+              width: 10,
+              height: 10,
+              borderRadius: "50%",
+            }}
+          ></div>
+        </div>
 
+        <div className={styles.infoContainer}>
+          <div style={{ padding: "10px" }}>
+            <img
+              src={props.logo}
+              alt={props.altLogo}
+              className={styles.cardImage}
+            />
+          
+            <p>{props.description}</p>
+          </div>
+          
           <span className={styles.button} title="Ver más">
             <BsPlusSquare className={styles.buttonIcon} />
             Ver más
