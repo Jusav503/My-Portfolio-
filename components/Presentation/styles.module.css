@@ -5,9 +5,6 @@
   justify-content: center;
   grid-template-columns: 1fr;
 }
-.content{
-  max-width: 650px;
-}
 .mainTitle {
   font-family: Greycliff CF, sans-serif;
   text-align: left;
@@ -48,11 +45,10 @@
     grid-row: 1;
   }
 }
-@media (min-width: 1350px) {
-
-}
 @media (min-width: 1400px) {
   .mainTitle {
-    font-size: 4rem;
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1;
   }
 }

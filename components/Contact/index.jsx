@@ -42,7 +42,7 @@ function Contact() {
           style={{
             background: "#171B22",
             borderRadius: "50%",
-            boxShadow: "0px 10px 30px -5px #171B22",
+            boxShadow: "0px 5px 10px -5px #171B22",
           }}
         >
           <ButtonLink link="https://github.com/Jusav503">
@@ -54,9 +54,9 @@ function Contact() {
           style={{
             background: "#2572B0",
             borderRadius: "50%",
-            marginLeft: "10px",
-            marginRight: "10px",
-            boxShadow: "0px 10px 30px -5px #2572B0",
+            marginLeft: "20px",
+            marginRight: "20px",
+            boxShadow: "0px 5px 10px -5px #2572B0",
           }}
         >
           <ButtonLink link="https://www.linkedin.com/in/justice-velasco/">
@@ -68,7 +68,7 @@ function Contact() {
           style={{
             background: "#B31C16",
             borderRadius: "50%",
-            boxShadow: "0px 10px 30px -5px #B31C16",
+            boxShadow: "0px 5px 10px -5px #B31C16",
           }}
         >
           <ButtonLink>

@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+.footerContainer {
+  margin-top: 200px;
+  padding: 1rem 0;
+  background: #000;
+  /* background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+}
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -15,6 +21,7 @@
 }
 .footerTitle {
   font-family: "Press Start 2P", cursive;
+  color:white;
 }
 .footer a {
   display: flex;

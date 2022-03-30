@@ -5,8 +5,8 @@ import styles from "../styles/Home.module.css";
 import FooterComponent from "../components/FooterComponent";
 import ProjectsArticle from "./ProjectsArticle";
 import AboutMe from "./AboutMe";
-import Contact from "../components/Contact";
 import Presentation from "../components/Presentation";
+import NavBar from "../components/NavBar";
 
 const Home: NextPage = () => {
   return (
@@ -19,12 +19,13 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <header>
+        <NavBar />
+      </header>
       <main className={styles.main}>
         <Presentation />
         <AboutMe />
         <ProjectsArticle />
-        <Contact />
       </main>
 
       <FooterComponent />

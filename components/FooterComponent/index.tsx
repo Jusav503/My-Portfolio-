@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTransition, animated, config } from "react-spring";
+import Contact from "../Contact";
 import LogosComponent from "../LogosComponent";
 import styles from "./styles.module.css";
 
@@ -39,8 +40,9 @@ export function Toggle() {
 
 function FooterComponent() {
   return (
-    <footer className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-      <LogosComponent />
+    <footer className={styles.footerContainer}>
+        <Contact />
+      
       <div className={styles.footer}>
         <span className={styles.footerTitle}>Justice Velasco</span>
         <Toggle />

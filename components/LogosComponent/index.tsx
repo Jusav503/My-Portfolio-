@@ -27,6 +27,13 @@ function LogosComponent() {
             style={{ width: 55, margin: 15 }}
           />
         </a>
+        <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+          <Image
+            src="https://desarrolloweb.com/storage/tag_images/actual/F2Cam6JmHqcvyb6Y0GVl7lSCqA4tEYLMufLm5OHo.png"
+            alt="tailwindcss logo"
+            className={styles.logo}
+          />
+        </a>
       </div>
     </div>
   );
