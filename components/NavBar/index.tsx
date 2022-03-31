@@ -10,7 +10,7 @@ function NavBar() {
         <Image
           src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
           alt="pixel Justice"
-          style={{ marginTop: "-7px" }}
+          style={{ marginTop: "-5px" }}
         />
       </figure>
 
@@ -39,7 +39,7 @@ function NavBar() {
         opened={opened}
         onClose={() => setOpened(false)}
         padding="xl"
-        size="md"
+        size="70%"
         styles={{
           drawer: { backgroundColor: "#1b1b1b" },
         }}

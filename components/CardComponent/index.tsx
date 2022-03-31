@@ -128,6 +128,7 @@ function CardComponent(props: cardProps) {
         position="bottom"
         size="xl"
         className={styles.drawerContainer}
+        styles={{ drawer: { backgroundColor: "#1b1b1b" }, }}
       >
         <h1 id="title">{props.name}</h1>
         <div className={styles.drawerContent}>

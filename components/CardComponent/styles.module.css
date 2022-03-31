@@ -75,7 +75,6 @@
 .drawerContainer {
   overflow-y: scroll;
   display: none;
-  background-color: #1b1b1b;
   color:white;
 }
 .drawerContainer h1{

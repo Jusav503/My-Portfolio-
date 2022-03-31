@@ -1,22 +1,23 @@
 .mainContainer {
   padding-top: 60px;
-}
-.articleContainer{
-  padding-top: 100px;
-}
-.articleTitle{
-  border-bottom: 1px solid white
+  margin-bottom: 100px;
 }
 .titleContainer {
   margin-top: 60px;
-  margin-bottom: -60px;
 }
 .titleContainer h2{
   font-size:2rem;
   font-weight: 600;
   color: cyan;
 }
-.mainContainer h3 {
+
+.articleContainer{
+  padding-top: 60px;
+}
+.articleTitle{
+  border-bottom: 1px solid white
+}
+.articleContainer h3 {
   padding: 2px;
   border-width: 1px;
   align-self: flex-end;
@@ -33,42 +34,24 @@
 }
 
 @media (max-width: 600px) {
-  .gridContainer {
-    grid-template-columns: 1fr;
-    row-gap: 15px;
-    padding-top: 10px;
-  }
   .paragraph {
     font-size: medium;
   }
 }
-@media (min-width: 600px) {
-  .gridContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    row-gap: 15px;
-  }
-}
 @media (min-width: 768px) {
-  .gridContainer {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: none;
-  }
-  .mainContainer p {
+  .articleContainer p {
     font-size: 1.2rem;
   }
-  .mainContainer h3 {
+  .articleContainer h3 {
     font-size: 1.6rem;
-    padding: 5px;
+    padding: 0 5px;
     border-width: 2px;
   }
   .articleTitle{ 
     border-bottom: 2px solid white
   }
   .titleContainer h2{
-    font-size:3rem;
+    font-size:2.4rem;
     font-weight: 800;
   }
 }

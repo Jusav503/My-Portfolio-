@@ -9,6 +9,7 @@ function AboutMe() {
       <div className={styles.titleContainer}>
         <h2 className="underline decoration-cyan-500">Sobre mí</h2>
       </div>
+      
       <AnimationOnScroll animateIn="animate__zoomIn">
         <article className={styles.articleContainer}>
           <div className={styles.articleTitle}>
