@@ -37,8 +37,9 @@ function Contact() {
   return (
     <div className={styles.container}>
       <section className={styles.contactContainer}>
+        <h1 className={styles.titleContainer}>¡Hablemos!</h1>
+
         <Box mx="auto" className={styles.formContainer}>
-          <h1>¡Hablemos!</h1>
           <form onSubmit={form.onSubmit(sendEmail)}>
             <TextInput
               name="name"
@@ -80,7 +81,7 @@ function Contact() {
           </form>
         </Box>
 
-        <div className={styles.logoContent}>
+        <div className={styles.logoContainer}>
           <div
             style={{
               background: "#171B22",

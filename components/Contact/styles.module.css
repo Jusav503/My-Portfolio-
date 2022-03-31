@@ -1,14 +1,11 @@
-.container {
-  width: 100%;
-}
 .contactContainer {
   display: grid;
-  align-items: center;
 }
-.logoContent {
+.logoContainer {
   display: flex;
   justify-content: center;
-  margin: 50px 0;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 .formContainer {
@@ -16,10 +13,9 @@
   margin: 1rem auto;
   padding: 10px;
   border-radius: 4px;
-
-  background-color: #1b1b1b;
 }
-.formContainer h1 {
+.titleContainer {
+  text-align: center;
   color: white;
   font-size: 2rem;
   font-weight: 600;
@@ -44,17 +40,28 @@
   .contactContainer{
     grid-template-columns:1fr 2fr;
   }
-  .logoContent{
+  .titleContainer{
+    height: 100%;
+    font-size: 4rem;
     grid-column: 1;
     grid-row: 1;
-    flex-direction: column;
-    align-items: center;
-    height: 50%;
-    justify-content: space-around;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .logoContainer{
+    grid-column: 1;
+    grid-row: 2;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-right: 100px;
   }
   .formContainer{
     grid-column: 2;
+    grid-row: 1;
+    grid-row-end: 3;
     height: auto;
     max-width: 500px;
+    margin-bottom: 100px;
   }
 }
