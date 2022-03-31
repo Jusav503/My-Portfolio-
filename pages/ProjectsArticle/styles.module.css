@@ -3,21 +3,13 @@
 .projectsContainer {
   padding-top: 100px;
 }
-.titleContainer {
-  display: flex;
-  border-bottom: 1px solid white;
-  margin-bottom: 25px;
+.titleContainer{
+  margin-bottom: 60px;
 }
-.title {
-  color: #30cfd0;
-  background-color: grey;
-  padding: 2px;
-  letter-spacing: 1px;
-  font-size: 1.3rem;
-  border-style: solid solid none;
-  border-color: white;
-  border-width: 1px;
-  align-self: flex-end;
+.titleContainer h2{
+  font-size:2rem;
+  font-weight: 600;
+  color: cyan;
 }
 
 .projectsMain {
@@ -32,13 +24,9 @@
   .projectsContent {
     grid-template-columns: 1fr 1fr;
   }
-  .titleContainer{
-    border-bottom: 2px solid white;
-  }
-  .title{
-    font-size: 1.6rem;
-    padding: 5px;
-    border-width: 2px;
+  .titleContainer h2{
+    font-size:3rem;
+    font-weight: 800;
   }
 }
 @media (min-width: 1200px) {

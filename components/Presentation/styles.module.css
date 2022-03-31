@@ -47,6 +47,9 @@
   }
 }
 @media (min-width: 1400px) {
+  .presentationContainer{
+    height: 90vh;
+  }
   .mainTitle {
     font-size: 5.6rem;
     font-weight: 700;

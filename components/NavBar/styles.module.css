@@ -35,6 +35,24 @@
   color: white;
 }
 
+.menuMobile{
+  color:white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.menuMobile ul {
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.menuMobile li {
+  border:0.5px solid grey;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 20px 0
+}
+
 @media (min-width: 768px) {
   .container {
     justify-content: space-around;

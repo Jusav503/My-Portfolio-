@@ -80,10 +80,10 @@ function CardComponent(props: cardProps) {
               alt={props.altLogo}
               className={styles.cardImage}
             />
-          
+
             <p>{props.description}</p>
           </div>
-          
+
           <span className={styles.button} title="Ver más">
             <BsPlusSquare className={styles.buttonIcon} />
             Ver más
@@ -97,15 +97,14 @@ function CardComponent(props: cardProps) {
         aria-labelledby="title"
         onClose={() => setOpened(false)}
         className={styles.modal}
+        styles={{ modal: { backgroundColor: "#1b1b1b" }, }}
       >
         <div className={styles.modalContent}>
           <h1 id="title">{props.name}</h1>
           <h3>Principales características:</h3>
           <ul className={styles.list}>
             {props.features.map((r) => (
-              <li key={r} style={{ color: "#3c3c3c" }}>
-                - {r}
-              </li>
+              <li key={r}>- {r}</li>
             ))}
           </ul>
           <a
@@ -136,9 +135,7 @@ function CardComponent(props: cardProps) {
             <h3>Principales características:</h3>
             <ul className={styles.list}>
               {props.features.map((r) => (
-                <li key={r} style={{ color: "#3c3c3c" }}>
-                  - {r}
-                </li>
+                <li key={r}>- {r}</li>
               ))}
             </ul>
           </div>

@@ -44,7 +44,7 @@ function NavBar() {
           drawer: { backgroundColor: "#1b1b1b" },
         }}
       >
-        <div style={{ color: "red" }}>
+        <div className={styles.menuMobile}>
           <ul>
             <a href="#inicio">
               <li>Inicio</li>

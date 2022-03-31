@@ -7,7 +7,7 @@ function ProjectsArticle() {
   return (
     <article className={styles.projectsContainer}>
       <div className={styles.titleContainer}>
-        <h1 className={styles.title}>Mis proyectos</h1>
+        <h2 className="underline decoration-cyan-500">Mis proyectos</h2>
       </div>
 
       <div className={styles.projectsMain}>

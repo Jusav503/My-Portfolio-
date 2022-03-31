@@ -59,17 +59,27 @@
 
 .modalContent {
   margin-top: -15px;
+  color:white;
 }
 .modalContent h1 {
+  font-size: 2.3rem;
   margin-bottom: 10px;
 }
+.modalContent h3 {
+  font-size:1.3rem;
+}
 .modalContent ul {
-  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .drawerContainer {
   overflow-y: scroll;
   display: none;
+  background-color: #1b1b1b;
+  color:white;
+}
+.drawerContainer h1{
+  font-size: 2rem;
 }
 .drawerContent{
   display:flex;
@@ -77,8 +87,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.drawerContent h3 {
+  font-size: 1.4rem;
+}
 .list {
-  padding: 0px;
+  color:white;
 }
 
 @media (max-width: 992px) {
