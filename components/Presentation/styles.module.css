@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr;
-  padding-top: 75px;
+  padding-top: 85px;
   gap: 15px;
 }
 .mainTitle {
@@ -54,5 +54,8 @@
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1;
+  }
+  .content{
+    max-width: 640px;
   }
 }

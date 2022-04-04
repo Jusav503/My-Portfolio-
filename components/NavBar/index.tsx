@@ -14,8 +14,8 @@ function NavBar() {
         />
       </figure>
 
-      <div className="hidden md:block">
-        <ul>
+      <div className="hidden md:block desktopMenu">
+        <ul className={styles.desktopMenu}>
           <a href="#inicio">
             <li>Inicio</li>
           </a>
