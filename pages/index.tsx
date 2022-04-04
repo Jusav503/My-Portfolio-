@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           name="description"
           content="Justice Velasco (Web and mobile developer)"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
       <header>
         <NavBar />
