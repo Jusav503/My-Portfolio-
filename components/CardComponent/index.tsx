@@ -4,6 +4,7 @@ import { useGesture } from "@use-gesture/react";
 import styles from "./styles.module.css";
 import { Drawer, Modal } from "@mantine/core";
 import { BsGithub, BsPlusSquare } from "react-icons/bs";
+import Image from "next/image";
 
 interface cardProps {
   image: string;
@@ -74,10 +75,10 @@ function CardComponent(props: cardProps) {
         </div>
 
         <div className={styles.infoContainer}>
-          <div style={{ padding: "10px" }}>
+          <div>
             <img
-              src={props.logo}
-              alt={props.altLogo}
+              src={props.image}
+              alt={props.altImage}
               className={styles.cardImage}
             />
 
@@ -86,7 +87,7 @@ function CardComponent(props: cardProps) {
 
           <span className={styles.button} title="Ver más">
             <BsPlusSquare className={styles.buttonIcon} />
-            Ver más
+             Más información
           </span>
         </div>
       </animated.div>
