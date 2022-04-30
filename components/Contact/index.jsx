@@ -35,80 +35,95 @@ function Contact() {
   });
 
   return (
-    <div className={styles.container}>
-      <section className={styles.contactContainer}>
-        <h1 className={styles.titleContainer}>¡Hablemos!</h1>
+    <div>
+      <div style={{ height: "190px", overflow: "hidden" }}>
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style={{ height: "100%", width: "100%" }}
+        >
+          <path
+            d="M-20.03,38.00 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style={{ stroke: "none", fill: "black" }}
+          ></path>
+        </svg>
+      </div>
 
-        <Box mx="auto" className={styles.formContainer}>
-          <form onSubmit={form.onSubmit(sendEmail)}>
-            <TextInput
-              name="name"
-              label="Nombre"
-              required
-              placeholder="Escribe tu nombre..."
-              {...form.getInputProps("name")}
-              styles={{
-                label: { color: "white" },
-                input: { backgroundColor: "#1b1b1b", color: "white" },
-              }}
-            />
-            <TextInput
-              name="email"
-              label="Correo electrónico"
-              placeholder="ejemplo@email.com"
-              required
-              style={{ margin: "15px 0" }}
-              {...form.getInputProps("email")}
-              styles={{
-                label: { color: "white" },
-                input: { backgroundColor: "#1b1b1b", color: "white" },
-              }}
-            />
-            <Textarea
-              name="message"
-              label="Mensaje"
-              placeholder="Mensaje..."
-              required
-              {...form.getInputProps("message")}
-              styles={{
-                label: { color: "white" },
-                input: { backgroundColor: "#1b1b1b", color: "white" },
-              }}
-            />
-            <button type="submit" className={styles.button}>
-              Enviar
-            </button>
-          </form>
-        </Box>
+      <div className={styles.container}>
+        <section className={styles.contactContainer}>
+          <h1 className={styles.titleContainer}>¡Hablemos!</h1>
 
-        <div className={styles.logoContainer}>
-          <div
-            style={{
-              background: "#171B22",
-              borderRadius: "50%",
-              boxShadow: "0px 5px 10px -5px #171B22",
-            }}
-          >
-            <ButtonLink link="https://github.com/Jusav503">
-              <BsGithub color="white" />
-            </ButtonLink>
+          <Box mx="auto" className={styles.formContainer}>
+            <form onSubmit={form.onSubmit(sendEmail)}>
+              <TextInput
+                name="name"
+                label="Nombre"
+                required
+                placeholder="Escribe tu nombre..."
+                {...form.getInputProps("name")}
+                styles={{
+                  label: { color: "white" },
+                  input: { backgroundColor: "#1b1b1b", color: "white" },
+                }}
+              />
+              <TextInput
+                name="email"
+                label="Correo electrónico"
+                placeholder="ejemplo@email.com"
+                required
+                style={{ margin: "15px 0" }}
+                {...form.getInputProps("email")}
+                styles={{
+                  label: { color: "white" },
+                  input: { backgroundColor: "#1b1b1b", color: "white" },
+                }}
+              />
+              <Textarea
+                name="message"
+                label="Mensaje"
+                placeholder="Mensaje..."
+                required
+                {...form.getInputProps("message")}
+                styles={{
+                  label: { color: "white" },
+                  input: { backgroundColor: "#1b1b1b", color: "white" },
+                }}
+              />
+              <button type="submit" className={styles.button}>
+                Enviar
+              </button>
+            </form>
+          </Box>
+
+          <div className={styles.logoContainer}>
+            <div
+              style={{
+                background: "#171B22",
+                borderRadius: "50%",
+                boxShadow: "0px 5px 10px -5px #171B22",
+              }}
+            >
+              <ButtonLink link="https://github.com/Jusav503">
+                <BsGithub color="white" />
+              </ButtonLink>
+            </div>
+
+            <div
+              style={{
+                background: "#2572B0",
+                borderRadius: "50%",
+                marginLeft: "20px",
+                marginRight: "20px",
+                boxShadow: "0px 5px 10px -5px #2572B0",
+              }}
+            >
+              <ButtonLink link="https://www.linkedin.com/in/justice-velasco/">
+                <BsLinkedin color="white" />
+              </ButtonLink>
+            </div>
           </div>
-
-          <div
-            style={{
-              background: "#2572B0",
-              borderRadius: "50%",
-              marginLeft: "20px",
-              marginRight: "20px",
-              boxShadow: "0px 5px 10px -5px #2572B0",
-            }}
-          >
-            <ButtonLink link="https://www.linkedin.com/in/justice-velasco/">
-              <BsLinkedin color="white" />
-            </ButtonLink>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

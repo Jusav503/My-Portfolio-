@@ -41,8 +41,8 @@ export function Toggle() {
 function FooterComponent() {
   return (
     <footer className={styles.footerContainer}>
-        <Contact />
-      
+      <Contact />
+
       <div className={styles.footer}>
         <span className={styles.footerTitle}>Justice Velasco</span>
         <Toggle />
