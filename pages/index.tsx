@@ -10,7 +10,7 @@ import NavBar from "../components/NavBar";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <html className={styles.container} style={{scrollBehavior:"smooth"}}>
       <Head>
         <title>Justice Velasco</title>
         <meta
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
       <div id="contacto">
         <FooterComponent />
       </div>
-    </div>
+    </html>
   );
 };
 
