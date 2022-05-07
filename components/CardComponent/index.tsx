@@ -1,6 +1,4 @@
-import React, { useRef, useState } from "react";
-import { useSpring, animated, to } from "react-spring";
-import { useGesture } from "@use-gesture/react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { Drawer, Modal } from "@mantine/core";
 import { BsGithub, BsPlusSquare } from "react-icons/bs";
@@ -18,33 +16,10 @@ interface cardProps {
 }
 function CardComponent(props: cardProps) {
   const [opened, setOpened] = useState(false);
-  const target = useRef(null);
-  const [{ zoom, scale }, api] = useSpring(() => ({
-    scale: 1,
-    zoom: 0,
-  }));
-  useGesture(
-    {
-      onMove: ({ dragging }) =>
-        !dragging &&
-        api({
-          scale: 1.1,
-        }),
-      onHover: ({ hovering }) => !hovering && api({ scale: 1 }),
-    },
-    { target, eventOptions: { passive: false } }
-  );
 
   return (
     <div className={styles.container}>
-      <animated.div
-        className={styles.card}
-        ref={target}
-        onClick={() => setOpened(true)}
-        style={{
-          scale: to([scale, zoom], (s, z) => s + z),
-        }}
-      >
+      <div className={styles.card} onClick={() => setOpened(true)}>
         <div style={{ display: "flex", backgroundColor: "grey", padding: 10 }}>
           <div
             style={{
@@ -87,10 +62,10 @@ function CardComponent(props: cardProps) {
 
           <span className={styles.button} title="Ver más">
             <BsPlusSquare className={styles.buttonIcon} />
-             Más información
+            Más información
           </span>
         </div>
-      </animated.div>
+      </div>
 
       <Modal
         centered
@@ -98,7 +73,7 @@ function CardComponent(props: cardProps) {
         aria-labelledby="title"
         onClose={() => setOpened(false)}
         className={styles.modal}
-        styles={{ modal: { backgroundColor: "#1b1b1b" }, }}
+        styles={{ modal: { backgroundColor: "#1b1b1b" } }}
       >
         <div className={styles.modalContent}>
           <h1 id="title">{props.name}</h1>
@@ -129,7 +104,7 @@ function CardComponent(props: cardProps) {
         position="bottom"
         size="xl"
         className={styles.drawerContainer}
-        styles={{ drawer: { backgroundColor: "#1b1b1b" }, }}
+        styles={{ drawer: { backgroundColor: "#1b1b1b" } }}
       >
         <h1 id="title">{props.name}</h1>
         <div className={styles.drawerContent}>

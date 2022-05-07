@@ -7,9 +7,9 @@
   margin-bottom: 60px;
 }
 .titleContainer h2{
-  font-size:2rem;
+  font-size:1.6rem;
   font-weight: 600;
-  color: cyan;
+  color: white;
 }
 
 .projectsMain {
@@ -18,7 +18,7 @@
 .projectsContent {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 15px;
+  gap: 20px;
 }
 @media (min-width: 768px) {
   .projectsContent {

@@ -97,4 +97,19 @@ export default [
     ],
     projectUrl: "https://github.com/Jusav503/TikTokClone"
   },
+  {
+    id: 7,
+    logo:"",
+    altLogo:"logo",
+    description:"Aplicación para alojamiento, principalmente casas de familia para alquileres de vacaciones y actividades turísticas...",
+    image: "https://jusapp.s3.eu-central-1.amazonaws.com/airbnb.jpg",
+    altImage: "airbnb clone",
+    name: "Airbnb Clone",
+    features: [
+      "Uso de FlatList en horizontal",
+      "Resultados en mapa interactivo",
+      "Menú inferior de navegación",
+    ],
+    projectUrl: "https://github.com/juusav/Airbnb-clone"
+  },
 ];
