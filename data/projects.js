@@ -1,5 +1,20 @@
 export default [
   {
+    id: 7,
+    logo:"",
+    altLogo:"logo",
+    description:"Aplicación para alojamiento, principalmente casas de familia para alquileres de vacaciones y actividades turísticas...",
+    image: "https://jusapp.s3.eu-central-1.amazonaws.com/airbnb.jpg",
+    altImage: "airbnb clone",
+    name: "Airbnb Clone",
+    features: [
+      "Uso de FlatList en horizontal",
+      "Resultados en mapa interactivo",
+      "Menú inferior de navegación",
+    ],
+    projectUrl: "https://github.com/juusav/Airbnb-clone"
+  },
+  {
     id: 1,
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/netflixlogo.png",
     altLogo:"netflix logo",
@@ -17,6 +32,21 @@ export default [
     projectUrl: "https://github.com/Jusav503/Netflix-Clone"
   },
   {
+    id: 4,
+    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/teslalogo.png",
+    altLogo:"tesla logo",
+    description:"Interfaz de la compañía estadounidense de vehículos eléctricos y energía limpia Tesla.",
+    image: "https://jusapp.s3.eu-central-1.amazonaws.com/teslaimage.jpg",
+    altImage: "tesla clone",
+    name: "Interfaz de Tesla web",
+    features: [
+      "Uso de FlatList en vertical",
+      "Creación y uso de componentes dinámicos",
+      "Diseño para todas las pantallas de teléfonos móviles"
+    ],
+    projectUrl: "https://github.com/Jusav503/Tesla-clone"
+  },
+  {
     id: 2,
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/bitcoinlogo.png",
     altLogo:"bitcoin logo",
@@ -32,6 +62,22 @@ export default [
       "Barra de búsqueda"
     ],
     projectUrl:"https://github.com/Jusav503/jusavcoin"
+  },
+  {
+    id: 6,
+    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/tiktoklogo.png",
+    altLogo:"tiktok logo",
+    description:"Interfaz de la famosa red social centrada en videos TikTok de la empresa china ByteDance Ltd.",
+    image: "https://jusapp.s3.eu-central-1.amazonaws.com/tiktokimage.jpg",
+    altImage: "tiktok clone",
+    name: "Interfaz de TikTok",
+    features: [
+      "Uso de FlatList en vertical",
+      "Reproductor de vídeo",
+      "Diseño para todas las pantallas de teléfonos móviles",
+      "Opción de pausar y reanudar vídeo"
+    ],
+    projectUrl: "https://github.com/Jusav503/TikTokClone"
   },
   {
     id: 3,
@@ -52,21 +98,6 @@ export default [
     projectUrl: "https://github.com/Jusav503/ecommerce-react-native",
   },
   {
-    id: 4,
-    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/teslalogo.png",
-    altLogo:"tesla logo",
-    description:"Interfaz de la compañía estadounidense de vehículos eléctricos y energía limpia Tesla.",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/teslaimage.jpg",
-    altImage: "tesla clone",
-    name: "Interfaz de Tesla web",
-    features: [
-      "Uso de FlatList en vertical",
-      "Creación y uso de componentes dinámicos",
-      "Diseño para todas las pantallas de teléfonos móviles"
-    ],
-    projectUrl: "https://github.com/Jusav503/Tesla-clone"
-  },
-  {
     id: 5,
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/tictactoelogo.png",
     altLogo:"tictactoe game",
@@ -80,36 +111,5 @@ export default [
       "Opción de repetir el juego"
     ],
     projectUrl: "https://github.com/Jusav503/tictactoe"
-  },
-  {
-    id: 6,
-    logo:"https://jusapp.s3.eu-central-1.amazonaws.com/tiktoklogo.png",
-    altLogo:"tiktok logo",
-    description:"Interfaz de la famosa red social centrada en videos TikTok de la empresa china ByteDance Ltd.",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/tiktokimage.jpg",
-    altImage: "tiktok clone",
-    name: "Interfaz de TikTok",
-    features: [
-      "Uso de FlatList en vertical",
-      "Reproductor de vídeo",
-      "Diseño para todas las pantallas de teléfonos móviles",
-      "Opción de pausar y reanudar vídeo"
-    ],
-    projectUrl: "https://github.com/Jusav503/TikTokClone"
-  },
-  {
-    id: 7,
-    logo:"",
-    altLogo:"logo",
-    description:"Aplicación para alojamiento, principalmente casas de familia para alquileres de vacaciones y actividades turísticas...",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/airbnb.jpg",
-    altImage: "airbnb clone",
-    name: "Airbnb Clone",
-    features: [
-      "Uso de FlatList en horizontal",
-      "Resultados en mapa interactivo",
-      "Menú inferior de navegación",
-    ],
-    projectUrl: "https://github.com/juusav/Airbnb-clone"
-  },
+  },  
 ];

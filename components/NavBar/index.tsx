@@ -6,13 +6,15 @@ function NavBar() {
   const [opened, setOpened] = useState(false);
   return (
     <nav className={styles.container}>
-      <figure className={styles.logoContainer}>
-        <Image
-          src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
-          alt="pixel Justice"
-          style={{ marginTop: "-5px" }}
-        />
-      </figure>
+      <a href="#inicio">
+        <figure className={styles.logoContainer}>
+          <Image
+            src="https://jusapp.s3.eu-central-1.amazonaws.com/myPixel.png"
+            alt="pixel Justice"
+            style={{ marginTop: "-5px" }}
+          />
+        </figure>
+      </a>
 
       <div className="hidden md:block desktopMenu">
         <ul className={styles.desktopMenu}>
@@ -31,17 +33,20 @@ function NavBar() {
         </ul>
       </div>
 
-      <div className="block md:hidden">
+      <div className="block md:hidden mr-5">
         <Burger opened={opened} onClick={() => setOpened(true)} color="white" />
       </div>
 
       <Drawer
         opened={opened}
+        hideCloseButton={true}
         onClose={() => setOpened(false)}
         padding="xl"
         size="70%"
         styles={{
-          drawer: { backgroundColor: "#1b1b1b" },
+          drawer: {
+            backgroundColor: "#1b1b1b",
+          },
         }}
       >
         <div className={styles.menuMobile}>
