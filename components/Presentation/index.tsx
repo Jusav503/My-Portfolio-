@@ -7,7 +7,7 @@ function Presentation() {
   return (
     <div className={styles.presentationContainer}>
       <div className={styles.content}>
-        <h1 className={styles.mainTitle}>Justice Velasco</h1>
+        <h1 className={styles.mainTitle} data-text="Justice Velasco" >Justice Velasco</h1>
         <h2>Desarrollador web/mobile.</h2>
         <p>
           Soy una persona incontenible por aprender algo nuevo cada vez que
