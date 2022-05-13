@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./styles.module.css";
-import { Textarea, TextInput, Group, Button, Box } from "@mantine/core";
+import { Textarea, TextInput, Box } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { ButtonLink } from "../atoms";
 
 function Contact() {
-  const [opened, setOpened] = useState(false);
-
   const sendEmail = (e) => {
     emailjs
       .send("service_8sfs6ia", "template_3pi70wj", e, "c0HBqU-uiI-cDWy3E")

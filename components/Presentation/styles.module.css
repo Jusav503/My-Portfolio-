@@ -175,7 +175,7 @@
 }
 .imageContainer {
   border: 5px solid;
-  border-image: linear-gradient(#ff512f, #dd2576, #1c64ff) 1;
+  border-image: linear-gradient(#ff512f, #d04f87, #1c64ff) 1;
   animation: rotate 2.5s ease-in infinite;
   box-shadow: 0px 10px 30px -5px #000000;
 }
