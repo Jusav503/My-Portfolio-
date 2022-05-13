@@ -1,14 +1,10 @@
-.mainContainer {
-  height: 65vh;
-}
 .titleContainer h2{
   font-size:2rem;
   font-weight: 600;
   color: white;
 }
-
 .articleContainer{
-  padding-top: 60px;
+  padding-top: 50px;
 }
 .articleTitle{
   border-bottom: 1px solid white

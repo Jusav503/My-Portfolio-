@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 function AboutMe() {
   return (
 
-    <div style={{width:"100%", backgroundColor:"#1d1d1d", paddingTop: "100px"}}>
+    <div style={{width:"100%", backgroundColor:"#1d1d1d", paddingTop: "90px", paddingBottom: "40px"}}>
       <div className="paddingContainer">
         <section className={styles.mainContainer}>
           <div className={styles.titleContainer}>
