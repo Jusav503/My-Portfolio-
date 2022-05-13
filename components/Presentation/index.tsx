@@ -8,7 +8,7 @@ function Presentation() {
     <div className="paddingContainer">
       <div className={styles.presentationContainer}>
         <div className={styles.content}>
-          <h1 className={styles.mainTitle} data-text="Justice Velasco" >Justice Velasco</h1>
+          <div className={styles.mainTitle} data-text="Justice Velasco" >Justice Velasco</div>
           <h2>Desarrollador web/mobile.</h2>
           <p>
             Soy una persona incontenible por aprender algo nuevo cada vez que

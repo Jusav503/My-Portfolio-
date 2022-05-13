@@ -10,7 +10,7 @@
   width:100%;
   color: white;
   font-weight: bold;
-  position:relative;
+  position: relative;
 }
 .mainTitle:before {
   content: attr(data-text);
