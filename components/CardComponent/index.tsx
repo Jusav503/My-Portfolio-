@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { Drawer, Modal } from "@mantine/core";
 import { BsGithub, BsPlusSquare } from "react-icons/bs";
-import Image from "next/image";
 
 interface cardProps {
   image: string;
@@ -73,26 +72,32 @@ function CardComponent(props: cardProps) {
         aria-labelledby="title"
         onClose={() => setOpened(false)}
         className={styles.modal}
-        styles={{ modal: { backgroundColor: "#1b1b1b" } }}
+        styles={{ modal: { backgroundColor: "#1b1b1b", width:"600px" } }}
       >
         <div className={styles.modalContent}>
-          <h1 id="title">{props.name}</h1>
-          <h3>Principales características:</h3>
-          <ul className={styles.list}>
-            {props.features.map((r) => (
-              <li key={r}>- {r}</li>
-            ))}
-          </ul>
-          <a
-            title="Jusav503"
-            className={styles.button}
-            target="_blank"
-            rel="noopener noreferrer"
-            href={props.projectUrl}
-          >
-            <BsGithub className={styles.buttonIcon} />
-            Ver proyecto
-          </a>
+          <figure>
+            <img src={props.image} width="250px" alt={props.altImage} />
+          </figure>
+
+          <div style={{paddingLeft:"20px"}}>
+            <h1 id="title">{props.name}</h1>
+            <h3>Principales características:</h3>
+            <ul className={styles.list}>
+              {props.features.map((r) => (
+                <li key={r}>- {r}</li>
+              ))}
+            </ul>
+            <a
+              title="Jusav503"
+              className={styles.button}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.projectUrl}
+            >
+              <BsGithub className={styles.buttonIcon} />
+              Ver proyecto
+            </a>
+          </div>
         </div>
       </Modal>
 
