@@ -4,7 +4,11 @@ export default [
     logo:"",
     altLogo:"logo",
     description:"Aplicación para alojamiento, principalmente casas de familia para alquileres de vacaciones y actividades turísticas...",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/airbnb.jpg",
+    image: [
+      "https://jusapp.s3.eu-central-1.amazonaws.com/airbnb.jpg",
+      "https://jusapp.s3.eu-central-1.amazonaws.com/airbnb2.jpg",
+      "https://jusapp.s3.eu-central-1.amazonaws.com/airbnb3.jpg",
+    ],
     altImage: "airbnb clone",
     name: "Airbnb Clone",
     features: [
@@ -19,7 +23,11 @@ export default [
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/netflixlogo.png",
     altLogo:"netflix logo",
     description:"Interfaz de la aplicación estadounidense de producción y servicio de streaming por suscripción Netflix.",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/netflix.jpg",
+    image: [
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/netflixclone.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/netflixclone2.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/netflixclone3.jpg"
+    ],
     altImage: "netflix clone",
     name: "Interfaz de Netflix",
     features: [
@@ -36,7 +44,10 @@ export default [
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/teslalogo.png",
     altLogo:"tesla logo",
     description:"Interfaz de la compañía estadounidense de vehículos eléctricos y energía limpia Tesla.",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/teslaimage.jpg",
+    image: [
+      "https://jusapp.s3.eu-central-1.amazonaws.com/teslaimage.jpg",
+      "https://i.pinimg.com/originals/85/75/79/857579f25c1269f438f3b7f22f9accc9.png"
+    ],
     altImage: "tesla clone",
     name: "Interfaz de Tesla web",
     features: [
@@ -51,7 +62,11 @@ export default [
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/bitcoinlogo.png",
     altLogo:"bitcoin logo",
     description:"Jusavcoin muestra los precios de las principales criptomonedas en vivo, los gráficos de criptomonedas y la capitalización de mercado.",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/jusavcoin2.jpg",
+    image:[
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/jusavcoin.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/jusavcoin2.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/jusavcoin3.jpg",
+    ],
     altImage: "cripto info",
     name: "Jusavcoin",
     features: [
@@ -68,7 +83,10 @@ export default [
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/tiktoklogo.png",
     altLogo:"tiktok logo",
     description:"Interfaz de la famosa red social centrada en videos TikTok de la empresa china ByteDance Ltd.",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/tiktokimage.jpg",
+    image:[
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/tiktokclone.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/tiktokclone2.jpg",
+    ],
     altImage: "tiktok clone",
     name: "Interfaz de TikTok",
     features: [
@@ -84,7 +102,11 @@ export default [
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/amazonlogo.webp",
     altLogo:"amazon logo",
     description:"Interfaz de la aplicación E-commerce de la tecnológica multinacional estadounidense Amazon.",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/amazonimage.jpg",
+    image:[
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/amazonclone3.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/amazonclone.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/amazonclone2.jpg",
+    ],
     altImage: "amazon clone",
     name: "Interfaz de Amazon",
     features: [
@@ -102,7 +124,11 @@ export default [
     logo:"https://jusapp.s3.eu-central-1.amazonaws.com/tictactoelogo.png",
     altLogo:"tictactoe game",
     description:"Juego TicTacToe creado enteramente con JavaScript.",
-    image: "https://jusapp.s3.eu-central-1.amazonaws.com/tictactoe.jpg",
+    image:[
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/tictactoe.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/tictactoe2.jpg",
+      "https://github-images-jusav.s3.eu-central-1.amazonaws.com/tictactoe3.jpg",
+    ],
     altImage: "Juego TicTacToe",
     name: "TicTacToe game",
     features: [

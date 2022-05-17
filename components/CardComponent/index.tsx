@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { Drawer, Modal } from "@mantine/core";
 import { BsGithub, BsPlusSquare } from "react-icons/bs";
+import CarouselComponent from "../carouselComponent";
 
 interface cardProps {
-  image: string;
+  image: string[];
   altImage: string;
   logo: string;
   altLogo: string;
@@ -51,7 +52,7 @@ function CardComponent(props: cardProps) {
         <div className={styles.infoContainer}>
           <div>
             <img
-              src={props.image}
+              src={props.image[0]}
               alt={props.altImage}
               className={styles.cardImage}
             />
@@ -75,9 +76,7 @@ function CardComponent(props: cardProps) {
         styles={{ modal: { backgroundColor: "#1b1b1b", width:"600px" } }}
       >
         <div className={styles.modalContent}>
-          <figure>
-            <img src={props.image} width="250px" alt={props.altImage} />
-          </figure>
+          <CarouselComponent images={props.image} autoPlay={true} showButtons={false} />
 
           <div style={{paddingLeft:"20px"}}>
             <h1 id="title">{props.name}</h1>
