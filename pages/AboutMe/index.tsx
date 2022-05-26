@@ -46,8 +46,8 @@ function AboutMe() {
               </div>
               <p className={styles.paragraph}>
                 Soy una persona autodidacta, estoy en constante aprendizaje, ya sea,
-                viendo videos, realizando pequeños cursos en linea, inluso leyendo
-                documentación.
+                viendo videos, realizando pequeños cursos en linea, incluso leyendo la
+                documentación de vez en cuando.
                 <br />
                 Me considero capaz de aprender rápidamente el uso de nuevas
                 tecnologías. La atención al detalle es parte de mi, al igual que
