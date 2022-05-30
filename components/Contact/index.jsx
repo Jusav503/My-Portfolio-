@@ -101,7 +101,7 @@ function Contact() {
                 boxShadow: "0px 5px 10px -5px #171B22",
               }}
             >
-              <ButtonLink link="https://github.com/Jusav503">
+              <ButtonLink link="https://github.com/juusav">
                 <BsGithub color="white" />
               </ButtonLink>
             </div>

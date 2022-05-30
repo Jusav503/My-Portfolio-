@@ -29,7 +29,7 @@ function AboutMe() {
                 <br />
                 Por cuenta propia aprendí durante 3 meses Laravel 8, desarrollé una
                 pequeña web autoadministrable. Además, por mi alta curiosidad decidí
-                pasarme a desarrollo mobile, desarrollando pequeñas interfaces,
+                aprender desarrollo mobile. Desarrollando pequeñas interfaces,
                 consumiendo datos de una API pública, clonando algunas de las
                 interfaces como Netflix, Spotify, Amazon para poder potenciar mis
                 habilidades como desarrollador.
