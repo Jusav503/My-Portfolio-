@@ -1,45 +1,67 @@
-.articleContainer{
-    padding-top: 50px;
+.articleContainer {
+  margin-top: 15px;
+}
+.articleTitleContainer {
+  border-bottom: 1px solid white;
+}
+.articleTitle {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2px;
+  border-width: 1px;
+  align-self: flex-end;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-style: solid solid none;
+  border-color: white;
+}
+.paragraph {
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.808);
+}
+.stackIconsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  color: white;
+}
+.stackIconsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stackIcons {
+  font-size: 2.2rem;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .paragraph {
+    font-size: 1rem;
   }
-  .articleTitle{
-    border-bottom: 1px solid white
+}
+@media (min-width: 768px) {
+  .articleContainer {
+    margin: 30px;
   }
-  .articleContainer h3 {
-    color: white;
-    font-size: 1.2rem;
-    padding: 2px;
-    border-width: 1px;
-    align-self: flex-end;
-    letter-spacing: 1px;
-    font-weight: 600;
-    border-style: solid solid none;
-    border-color: white;
+  .articleTitle {
+    font-size: 1.3rem;
+    padding: 0 5px;
+    border-width: 2px;
+  }
+  .articleTitleContainer {
+    border-bottom: 2px solid white;
+  }
+  .titleContainer h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
   }
   .paragraph {
-    padding-top:10px;
-    color: rgba(255, 255, 255, 0.808);
+    font-size: 1.1rem;
   }
-  
-  @media (max-width: 600px) {
-    .paragraph {
-      font-size: 1rem;
-    }
+  .stackIconsContainer {
+    grid-template-columns: repeat(5, 1fr);
   }
-  @media (min-width: 768px) {
-    .articleContainer p {
-      font-size: 1.1rem;
-    }
-    .articleContainer h3 {
-      font-size: 1.3rem;
-      padding: 0 5px;
-      border-width: 2px;
-    }
-    .articleTitle{ 
-      border-bottom: 2px solid white
-    }
-    .titleContainer h2{
-      font-size:2.4rem;
-      font-weight: 800;
-    }
-  }
-  
+}

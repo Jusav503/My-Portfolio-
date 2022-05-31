@@ -2,7 +2,7 @@ import React from "react";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "./styles.module.css";
-import { Formation, Skills } from "../../components/AboutMeComponents/aboutme";
+import { Formation, Skills, StackTech } from "../../components/AboutMeComponents";
 
 function AboutMe() {
   return (
@@ -14,21 +14,20 @@ function AboutMe() {
         paddingBottom: "40px",
       }}
     >
-      <div className="paddingContainer">
-        <section>
-          <div className={styles.titleContainer}>
-            <h2>Sobre mí</h2>
-          </div>
+      <section className="paddingContainer">
+        <h2 className={styles.mainTitle}>Sobre mí</h2>
+        <AnimationOnScroll animateIn="animate__zoomIn">
+          <Skills />
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__zoomIn">
+          <Formation />
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__zoomIn">
+          <StackTech />
+        </AnimationOnScroll>
 
-          <AnimationOnScroll animateIn="animate__zoomIn">
-            <Formation />
-          </AnimationOnScroll>
-
-          <AnimationOnScroll animateIn="animate__zoomIn">
-            <Skills />
-          </AnimationOnScroll>
-        </section>
-      </div>
+        <h2 className={styles.mainTitle}>Certificados</h2>
+      </section>
     </div>
   );
 }
