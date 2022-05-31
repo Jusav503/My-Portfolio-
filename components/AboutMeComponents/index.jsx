@@ -5,7 +5,7 @@ import {
   SiJavascript,
   SiReact,
   SiTailwindcss,
-} from "react-icons/Si";
+} from "react-icons/si";
 
 export const Formation = () => {
   return (
