@@ -2,59 +2,30 @@ import React from "react";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "./styles.module.css";
+import { Formation, Skills } from "./components/aboutme";
 
 function AboutMe() {
   return (
-
-    <div style={{width:"100%", backgroundColor:"#1d1d1d", paddingTop: "90px", paddingBottom: "40px"}}>
+    <div
+      style={{
+        width: "100%",
+        backgroundColor: "#1d1d1d",
+        paddingTop: "90px",
+        paddingBottom: "40px",
+      }}
+    >
       <div className="paddingContainer">
-        <section className={styles.mainContainer}>
+        <section>
           <div className={styles.titleContainer}>
             <h2>Sobre mí</h2>
           </div>
-          
+
           <AnimationOnScroll animateIn="animate__zoomIn">
-            <article className={styles.articleContainer}>
-              <div className={styles.articleTitle}>
-                <div style={{ display: "flex" }}>
-                  <h3>Formación</h3>
-                </div>
-              </div>
-              
-              <p className={styles.paragraph}>
-                A los 17 años hice una formación de programación y desarrollo de
-                aplicaciones web, aprendí muchas de las tecnologías que se usan en el
-                día a día de los programadores como HTML, CSS, JavaScript. También
-                aprendí a como planificar, organizarme y desarrollar los proyectos.
-                <br />
-                Por cuenta propia aprendí durante 3 meses Laravel 8, desarrollé una
-                pequeña web autoadministrable. Además, por mi alta curiosidad decidí
-                aprender desarrollo mobile. Desarrollando pequeñas interfaces,
-                consumiendo datos de una API pública, clonando algunas de las
-                interfaces como Netflix, Spotify, Amazon para poder potenciar mis
-                habilidades como desarrollador.
-              </p>
-            </article>
+            <Formation />
           </AnimationOnScroll>
-        
+
           <AnimationOnScroll animateIn="animate__zoomIn">
-            <article className={styles.articleContainer}>
-              <div className={styles.articleTitle}>
-                <div style={{ display: "flex" }}>
-                  <h3>Habilidades</h3>
-                </div>
-              </div>
-              <p className={styles.paragraph}>
-                Soy una persona autodidacta, estoy en constante aprendizaje, ya sea,
-                viendo videos, realizando pequeños cursos en linea, incluso leyendo la
-                documentación de vez en cuando.
-                <br />
-                Me considero capaz de aprender rápidamente el uso de nuevas
-                tecnologías. La atención al detalle es parte de mi, al igual que
-                siempre tratar de ser lo mas organizado posible en las carpetas,
-                código y documentación.
-              </p>
-            </article>
+            <Skills />
           </AnimationOnScroll>
         </section>
       </div>

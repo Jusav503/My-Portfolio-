@@ -49,7 +49,7 @@ export default [
       "https://i.pinimg.com/originals/85/75/79/857579f25c1269f438f3b7f22f9accc9.png"
     ],
     altImage: "tesla clone",
-    name: "Interfaz de Tesla web",
+    name: "Interfaz web de Tesla",
     features: [
       "Uso de FlatList en vertical",
       "Creación y uso de componentes dinámicos",

@@ -20,49 +20,49 @@ function CardComponent(props: cardProps) {
   return (
     <div className={styles.container}>
       <div className={styles.card} onClick={() => setOpened(true)}>
-        <div style={{ display: "flex", backgroundColor: "grey", padding: 10 }}>
-          <div
-            style={{
-              backgroundColor: "#F55E54",
-              width: 10,
-              height: 10,
-              borderRadius: "50%",
-            }}
-          ></div>
-          <div
-            style={{
-              backgroundColor: "#F9BC0D",
-              width: 10,
-              height: 10,
-              borderRadius: "50%",
-              marginLeft: 10,
-              marginRight: 10,
-            }}
-          ></div>
-          <div
-            style={{
-              backgroundColor: "#49C933",
-              width: 10,
-              height: 10,
-              borderRadius: "50%",
-            }}
-          ></div>
+        {/* Three dots card */}
+        <div className={styles.headerCard}>
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                backgroundColor: "#F55E54",
+                width: 10,
+                height: 10,
+                borderRadius: "50%",
+              }}
+            ></div>
+            <div
+              style={{
+                backgroundColor: "#F9BC0D",
+                width: 10,
+                height: 10,
+                borderRadius: "50%",
+                marginLeft: 10,
+                marginRight: 10,
+              }}
+            ></div>
+            <div
+              style={{
+                backgroundColor: "#49C933",
+                width: 10,
+                height: 10,
+                borderRadius: "50%",
+              }}
+            ></div>
+          </div>
         </div>
+        {/* End Three dots card */}
 
         <div className={styles.infoContainer}>
-          <div>
-            <img
-              src={props.image[0]}
-              alt={props.altImage}
-              className={styles.cardImage}
-            />
-
-            <p>{props.description}</p>
-          </div>
+          <img
+            src={props.image[0]}
+            alt={props.altImage}
+            className={styles.cardImage}
+          />
 
           <span className={styles.button} title="Ver más">
             <BsPlusSquare className={styles.buttonIcon} />
-            Más información
+            Información
           </span>
         </div>
       </div>
@@ -73,12 +73,16 @@ function CardComponent(props: cardProps) {
         aria-labelledby="title"
         onClose={() => setOpened(false)}
         className={styles.modal}
-        styles={{ modal: { backgroundColor: "#1b1b1b", width:"600px" } }}
+        styles={{ modal: { backgroundColor: "#1b1b1b", width: "600px" } }}
       >
         <div className={styles.modalContent}>
-          <CarouselComponent images={props.image} autoPlay={true} showButtons={false} />
+          <CarouselComponent
+            images={props.image}
+            autoPlay={true}
+            showButtons={false}
+          />
 
-          <div style={{paddingLeft:"20px"}}>
+          <div style={{ paddingLeft: "20px" }}>
             <h1 id="title">{props.name}</h1>
             <h3>Principales características:</h3>
             <ul className={styles.list}>
