@@ -2,7 +2,7 @@ import React from "react";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "./styles.module.css";
-import { Formation, Skills } from "./components/aboutme";
+import { Formation, Skills } from "../../components/AboutMeComponents/aboutme";
 
 function AboutMe() {
   return (
