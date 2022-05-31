@@ -25,8 +25,6 @@ function AboutMe() {
         <AnimationOnScroll animateIn="animate__zoomIn">
           <StackTech />
         </AnimationOnScroll>
-
-        <h2 className={styles.mainTitle}>Certificados</h2>
       </section>
     </div>
   );
