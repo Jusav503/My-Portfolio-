@@ -7,6 +7,7 @@ import ProjectsArticle from "./ProjectsArticle";
 import AboutMe from "./AboutMe";
 import Presentation from "../components/Presentation";
 import NavBar from "../components/NavBar";
+import { SliderComponent } from "../components/SliderComponent";
 
 const Home: NextPage = () => {
   return (
@@ -43,6 +44,7 @@ const Home: NextPage = () => {
           </svg>
         </div>
         <div id="sobre-mi">
+          <SliderComponent/>
           <AboutMe />
         </div>
         <div style={{ height: "150px", overflow: "hidden" }}>
