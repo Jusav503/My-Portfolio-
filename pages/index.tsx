@@ -7,13 +7,12 @@ import ProjectsArticle from "./ProjectsArticle";
 import AboutMe from "./AboutMe";
 import Presentation from "../components/Presentation";
 import NavBar from "../components/NavBar";
-import { SliderComponent } from "../components/SliderComponent";
 
 const Home: NextPage = () => {
   return (
     <html className={styles.container} style={{ scrollBehavior: "smooth" }}>
       <Head>
-        <title>Justice Velasco 😎</title>
+        <title>Justice Velasco</title>
         <meta
           name="description"
           content="Justice Velasco (Web and mobile developer)"
@@ -44,7 +43,6 @@ const Home: NextPage = () => {
           </svg>
         </div>
         <div id="sobre-mi">
-          <SliderComponent/>
           <AboutMe />
         </div>
         <div style={{ height: "150px", overflow: "hidden" }}>
