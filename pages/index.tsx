@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <html className={styles.container} style={{ scrollBehavior: "smooth" }}>
       <Head>
-        <title>Justice Velasco</title>
+        <title>Justice Velasco 😎</title>
         <meta
           name="description"
           content="Justice Velasco (Web and mobile developer)"
