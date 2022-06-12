@@ -3,3 +3,13 @@
   font-weight: 600;
   color: white;
 }
+.infoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.animationIframe {
+  width: 340px;
+  height: 340px;
+}
