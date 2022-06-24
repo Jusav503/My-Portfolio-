@@ -175,7 +175,7 @@
 }
 .imageContainer {
   border: 5px solid;
-  box-shadow: 0px 5px 15px -5px orange;
+  filter: drop-shadow(0 0 0.40rem orange);
   overflow: hidden;
   border-image: linear-gradient(#ff6a00, orange, #eee824) 1;
   animation: rotate 2.5s ease-in infinite;

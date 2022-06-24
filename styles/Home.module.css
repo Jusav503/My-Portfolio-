@@ -4,12 +4,6 @@
   background-color: #111111;
 }
 
-/* Works on Firefox */
-.container {
-  scrollbar-width: thin;
-  scrollbar-color: blue orange;
-}
-
 /* Works on Chrome, Edge, and Safari */
 .container::-webkit-scrollbar {
   width: 12px;

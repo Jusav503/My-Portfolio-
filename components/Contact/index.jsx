@@ -98,7 +98,7 @@ function Contact() {
               style={{
                 background: "#171B22",
                 borderRadius: "50%",
-                boxShadow: "0px 5px 10px -5px #171B22",
+                filter: "drop-shadow(0 0 0.40rem #171B22)"
               }}
             >
               <ButtonLink link="https://github.com/juusav">
@@ -112,7 +112,7 @@ function Contact() {
                 borderRadius: "50%",
                 marginLeft: "20px",
                 marginRight: "20px",
-                boxShadow: "0px 5px 10px -5px #2572B0",
+                filter: "drop-shadow(0 0 0.40rem #2572B0)"
               }}
             >
               <ButtonLink link="https://www.linkedin.com/in/justice-velasco/">
